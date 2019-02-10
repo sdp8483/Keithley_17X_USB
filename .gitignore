@@ -1,0 +1,34 @@
+# For PCBs designed using KiCad: http://www.kicad-pcb.org/
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*~
+_autosave-*
+*.tmp
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+*.xml
+*.csv
+
+# TI Code Composer Studio
+/firmware/.jxbrowser-data/**
+/firmware/.metadata/**
+/firmware/RemoteSystemsTempFiles/**
+**/.launches/
+**/.config/
+**/Debug/
+**/Release/
+*.xdchelp
+
+# Ignore example file
+/firmware/msp430fr211x_euscia0_uart_05.c/**
