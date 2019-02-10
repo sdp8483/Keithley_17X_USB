@@ -21,9 +21,11 @@ _autosave-*
 *.csv
 
 # TI Code Composer Studio
+*.cmd
 /firmware/.jxbrowser-data/**
 /firmware/.metadata/**
 /firmware/RemoteSystemsTempFiles/**
+**/.settings/**
 **/.launches/
 **/.config/
 **/Debug/
