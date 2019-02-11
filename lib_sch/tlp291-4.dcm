@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLP291-4
+D Quad DC Optocoupler, Vce 80V, CTR 50-100%, SOP16
+K NPN DC Quad Optocoupler
+F https://toshiba.semicon-storage.com/info/docget.jsp?did=12858&prodName=TLP291-4
+$ENDCMP
+#
+#End Doc Library
