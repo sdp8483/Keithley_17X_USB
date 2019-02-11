@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name MSP430)(type Legacy)(uri ${KIPRJMOD}/lib_sch/msp430.lib)(options "")(descr ""))
+  (lib (name TLP291-4)(type Legacy)(uri ${KIPRJMOD}/lib_sch/tlp291-4.lib)(options "")(descr ""))
+  (lib (name TPS782)(type Legacy)(uri ${KIPRJMOD}/lib_sch/tps782.lib)(options "")(descr ""))
 )
