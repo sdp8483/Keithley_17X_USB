@@ -53,7 +53,12 @@ P 850 1200
 F 0 "J?" H 650 1650 50  0000 L CNN
 F 1 "USB_B" H 650 1550 50  0000 L CNN
 F 2 "" H 1000 1150 50  0001 C CNN
-F 3 " ~" H 1000 1150 50  0001 C CNN
+F 3 "https://productfinder.pulseeng.com/doc_type/WEB301/doc_num/E8144-B02022-L/doc_part/E8144-B02022-L.pdf" H 1000 1150 50  0001 C CNN
+F 4 "CONN RCPT TYPEB 4POS R/A" H 850 1200 50  0001 C CNN "Description"
+F 5 "Pulse Electronics Network" H 850 1200 50  0001 C CNN "Manufacture"
+F 6 "E8144-B02022-L" H 850 1200 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 850 1200 50  0001 C CNN "Supplier"
+F 8 "553-2272-ND" H 850 1200 50  0001 C CNN "Supplier Part Number"
 	1    850  1200
 	1    0    0    -1  
 $EndComp
@@ -64,7 +69,12 @@ P 8150 1750
 F 0 "R?" V 8230 1750 50  0000 C CNN
 F 1 "27R" V 8150 1750 50  0000 C CNN
 F 2 "" V 8080 1750 50  0001 C CNN
-F 3 "~" H 8150 1750 50  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 8150 1750 50  0001 C CNN
+F 4 "RES 27 OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
+F 5 "Stackpole Electronics Inc" H 0   0   50  0001 C CNN "Manufacture"
+F 6 "RMCF0603JT27R0" H 0   0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
+F 8 "RMCF0603JT27R0CT-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    8150 1750
 	0    1    1    0   
 $EndComp
@@ -75,7 +85,12 @@ P 8150 1950
 F 0 "R?" V 8230 1950 50  0000 C CNN
 F 1 "27R" V 8150 1950 50  0000 C CNN
 F 2 "" V 8080 1950 50  0001 C CNN
-F 3 "~" H 8150 1950 50  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 8150 1950 50  0001 C CNN
+F 4 "RES 27 OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
+F 5 "Stackpole Electronics Inc" H 0   0   50  0001 C CNN "Manufacture"
+F 6 "RMCF0603JT27R0" H 0   0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
+F 8 "RMCF0603JT27R0CT-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    8150 1950
 	0    1    1    0   
 $EndComp
@@ -132,7 +147,12 @@ P 8500 2450
 F 0 "C?" H 8525 2550 50  0000 L CNN
 F 1 "100nF" H 8525 2350 50  0000 L CNN
 F 2 "" H 8538 2300 50  0001 C CNN
-F 3 "~" H 8500 2450 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C104Z3VACTU.pdf" H 8500 2450 50  0001 C CNN
+F 4 "CAP CER 0.1UF 25V Y5V 0603" H 0   0   50  0001 C CNN "Description"
+F 5 "KEMET" H 0   0   50  0001 C CNN "Manufacture"
+F 6 "C0603C104Z3VACTU" H 0   0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
+F 8 "399-1100-1-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    8500 2450
 	1    0    0    -1  
 $EndComp
@@ -172,7 +192,12 @@ P 8000 2450
 F 0 "C?" H 8025 2550 50  0000 L CNN
 F 1 "4.7uF" H 8025 2350 50  0000 L CNN
 F 2 "" H 8038 2300 50  0001 C CNN
-F 3 "~" H 8000 2450 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475KQ8NNNC.jsp" H 8000 2450 50  0001 C CNN
+F 4 "CAP CER 4.7UF 6.3V X5R 0603" H 8000 2450 50  0001 C CNN "Description"
+F 5 "Samsung Electro-Mechanics" H 8000 2450 50  0001 C CNN "Manufacture"
+F 6 "CL10A475KQ8NNNC" H 8000 2450 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 8000 2450 50  0001 C CNN "Supplier"
+F 8 "1276-1045-1-ND" H 8000 2450 50  0001 C CNN "Supplier Part Number"
 	1    8000 2450
 	1    0    0    -1  
 $EndComp
@@ -183,7 +208,12 @@ P 7700 2450
 F 0 "C?" H 7725 2550 50  0000 L CNN
 F 1 "100nF" H 7725 2350 50  0000 L CNN
 F 2 "" H 7738 2300 50  0001 C CNN
-F 3 "~" H 7700 2450 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C104Z3VACTU.pdf" H 7700 2450 50  0001 C CNN
+F 4 "CAP CER 0.1UF 25V Y5V 0603" H 0   0   50  0001 C CNN "Description"
+F 5 "KEMET" H 0   0   50  0001 C CNN "Manufacture"
+F 6 "C0603C104Z3VACTU" H 0   0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
+F 8 "399-1100-1-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    7700 2450
 	1    0    0    -1  
 $EndComp
@@ -250,7 +280,12 @@ P 9550 5750
 F 0 "R?" V 9630 5750 50  0000 C CNN
 F 1 "1k" V 9550 5750 50  0000 C CNN
 F 2 "" V 9480 5750 50  0001 C CNN
-F 3 "~" H 9550 5750 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 9550 5750 50  0001 C CNN
+F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
+F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacture"
+F 6 "RC0603JR-071KL" H 0   0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
+F 8 "311-1.0KGRCT-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    9550 5750
 	1    0    0    -1  
 $EndComp
@@ -263,7 +298,12 @@ P 9850 5750
 F 0 "R?" V 9930 5750 50  0000 C CNN
 F 1 "1k" V 9850 5750 50  0000 C CNN
 F 2 "" V 9780 5750 50  0001 C CNN
-F 3 "~" H 9850 5750 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 9850 5750 50  0001 C CNN
+F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
+F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacture"
+F 6 "RC0603JR-071KL" H 0   0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
+F 8 "311-1.0KGRCT-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    9850 5750
 	1    0    0    -1  
 $EndComp
@@ -307,7 +347,12 @@ P 2550 4650
 F 0 "RN?" V 2250 4650 50  0000 C CNN
 F 1 "10k" V 2750 4650 50  0000 C CNN
 F 2 "" V 2825 4650 50  0001 C CNN
-F 3 "~" H 2550 4650 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Yageo%20PDFs/YC102-358,TC122-164_Series_DS.pdf" H 2550 4650 50  0001 C CNN
+F 4 "RES ARRAY 4 RES 10K OHM 2012" H 2550 4650 50  0001 C CNN "Description"
+F 5 "Yageo" H 2550 4650 50  0001 C CNN "Manufacture"
+F 6 "YC324-JK-0710KL" H 2550 4650 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 2550 4650 50  0001 C CNN "Supplier"
+F 8 "YC324J-10KCT-ND" H 2550 4650 50  0001 C CNN "Supplier Part Number"
 	1    2550 4650
 	0    1    1    0   
 $EndComp
@@ -402,20 +447,12 @@ P 3550 3650
 F 0 "U?" H 3350 4500 50  0000 L CNN
 F 1 "TLP281-4" H 3550 4500 50  0000 L CNN
 F 2 "Package_SO:SOIC-16_4.55x10.3mm_P1.27mm" H 3550 2900 50  0001 L CIN
-F 3 "" H 3550 4300 50  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/TLP281.pdf" H 3550 4300 50  0001 L CNN
+F 4 "OPTOISO 2.5KV 4CH TRANS 16-SOP" H 3550 3650 50  0001 C CNN "Description"
+F 5 "Toshiba Semiconductor and Storage" H 3550 3650 50  0001 C CNN "Manufacture"
+F 6 "TLP281-4(GB-TP,J,F" H 3550 3650 50  0001 C CNN "Mfg Part Number"
 	1    3550 3650
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Pack04 RN?
-U 1 1 5C68E0EC
-P 2550 7450
-F 0 "RN?" V 2250 7450 50  0000 C CNN
-F 1 "10k" V 2750 7450 50  0000 C CNN
-F 2 "" V 2825 7450 50  0001 C CNN
-F 3 "~" H 2550 7450 50  0001 C CNN
-	1    2550 7450
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	2750 7550 3150 7550
@@ -497,7 +534,10 @@ P 3550 6450
 F 0 "U?" H 3350 7300 50  0000 L CNN
 F 1 "TLP281-4" H 3550 7300 50  0000 L CNN
 F 2 "Package_SO:SOIC-16_4.55x10.3mm_P1.27mm" H 3550 5700 50  0001 L CIN
-F 3 "" H 3550 7100 50  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/TLP281.pdf" H 3550 7100 50  0001 L CNN
+F 4 "OPTOISO 2.5KV 4CH TRANS 16-SOP" H 3550 6450 50  0001 C CNN "Description"
+F 5 "Toshiba Semiconductor and Storage" H 3550 6450 50  0001 C CNN "Manufacture"
+F 6 "TLP281-4(GB-TP,J,F" H 3550 6450 50  0001 C CNN "Mfg Part Number"
 	1    3550 6450
 	1    0    0    -1  
 $EndComp
@@ -614,7 +654,12 @@ P 5800 3750
 F 0 "C?" H 5825 3850 50  0000 L CNN
 F 1 "100nF" H 5825 3650 50  0000 L CNN
 F 2 "" H 5838 3600 50  0001 C CNN
-F 3 "~" H 5800 3750 50  0001 C CNN
+F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C104Z3VACTU.pdf" H 5800 3750 50  0001 C CNN
+F 4 "CAP CER 0.1UF 25V Y5V 0603" H 0   0   50  0001 C CNN "Description"
+F 5 "KEMET" H 0   0   50  0001 C CNN "Manufacture"
+F 6 "C0603C104Z3VACTU" H 0   0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
+F 8 "399-1100-1-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    5800 3750
 	1    0    0    -1  
 $EndComp
@@ -631,7 +676,12 @@ P 5500 3750
 F 0 "C?" H 5525 3850 50  0000 L CNN
 F 1 "1uF" H 5525 3650 50  0000 L CNN
 F 2 "" H 5538 3600 50  0001 C CNN
-F 3 "~" H 5500 3750 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A105KQ8NNNC.jsp" H 5500 3750 50  0001 C CNN
+F 4 "CAP CER 1UF 6.3V X5R 0603" H 0   0   50  0001 C CNN "Description"
+F 5 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "Manufacture"
+F 6 "CL10A105KQ8NNNC" H 0   0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
+F 8 "1276-1036-1-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    5500 3750
 	1    0    0    -1  
 $EndComp
@@ -657,7 +707,12 @@ P 3150 1200
 F 0 "C?" H 3175 1300 50  0000 L CNN
 F 1 "1uF" H 3175 1100 50  0000 L CNN
 F 2 "" H 3188 1050 50  0001 C CNN
-F 3 "~" H 3150 1200 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A105KQ8NNNC.jsp" H 3150 1200 50  0001 C CNN
+F 4 "CAP CER 1UF 6.3V X5R 0603" H 0   0   50  0001 C CNN "Description"
+F 5 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "Manufacture"
+F 6 "CL10A105KQ8NNNC" H 0   0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
+F 8 "1276-1036-1-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    3150 1200
 	1    0    0    -1  
 $EndComp
@@ -703,7 +758,12 @@ P 4500 1200
 F 0 "C?" H 4525 1300 50  0000 L CNN
 F 1 "1uF" H 4525 1100 50  0000 L CNN
 F 2 "" H 4538 1050 50  0001 C CNN
-F 3 "~" H 4500 1200 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A105KQ8NNNC.jsp" H 4500 1200 50  0001 C CNN
+F 4 "CAP CER 1UF 6.3V X5R 0603" H 0   0   50  0001 C CNN "Description"
+F 5 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "Manufacture"
+F 6 "CL10A105KQ8NNNC" H 0   0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
+F 8 "1276-1036-1-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    4500 1200
 	1    0    0    -1  
 $EndComp
@@ -786,7 +846,12 @@ P 2350 1000
 F 0 "D?" H 2350 1100 50  0000 C CNN
 F 1 "D_Schottky" H 2350 900 50  0000 C CNN
 F 2 "" H 2350 1000 50  0001 C CNN
-F 3 "~" H 2350 1000 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/DSS12U%20THRU%20DSS125U%20N1873%20REV.A.pdf" H 2350 1000 50  0001 C CNN
+F 4 "SCHOTTKY 60V SOD-123FL" H 2350 1000 50  0001 C CNN "Description"
+F 5 "SMC Diode Solutions" H 2350 1000 50  0001 C CNN "Manufacture"
+F 6 "DSS16UTR" H 2350 1000 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 2350 1000 50  0001 C CNN "Supplier"
+F 8 "1655-1929-1-ND" H 2350 1000 50  0001 C CNN "Supplier Part Number"
 	1    2350 1000
 	-1   0    0    -1  
 $EndComp
@@ -799,7 +864,12 @@ P 1750 1000
 F 0 "TH?" V 1590 1000 50  0000 C CNN
 F 1 "Thermistor_PTC" V 1870 1000 50  0000 C CNN
 F 2 "" H 1800 800 50  0001 L CNN
-F 3 "~" H 1750 1000 50  0001 C CNN
+F 3 "https://www.belfuse.com/resources/CircuitProtection/datasheets/0ZCJ%20Nov2016.pdf" H 1750 1000 50  0001 C CNN
+F 4 "PTC RESET FUSE 8V 500MA 1206" H 1750 1000 50  0001 C CNN "Description"
+F 5 "Bel Fuse Inc." H 1750 1000 50  0001 C CNN "Manufacture"
+F 6 "0ZCJ0050FF2G" H 1750 1000 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 1750 1000 50  0001 C CNN "Supplier"
+F 8 "507-1802-1-ND" H 1750 1000 50  0001 C CNN "Supplier Part Number"
 	1    1750 1000
 	0    1    1    0   
 $EndComp
@@ -1158,7 +1228,12 @@ P 10250 5750
 F 0 "R?" V 10330 5750 50  0000 C CNN
 F 1 "1k" V 10250 5750 50  0000 C CNN
 F 2 "" V 10180 5750 50  0001 C CNN
-F 3 "~" H 10250 5750 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 10250 5750 50  0001 C CNN
+F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
+F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacture"
+F 6 "RC0603JR-071KL" H 0   0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
+F 8 "311-1.0KGRCT-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    10250 5750
 	1    0    0    -1  
 $EndComp
@@ -1230,7 +1305,12 @@ P 9100 5750
 F 0 "R?" V 9180 5750 50  0000 C CNN
 F 1 "1k" V 9100 5750 50  0000 C CNN
 F 2 "" V 9030 5750 50  0001 C CNN
-F 3 "~" H 9100 5750 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 9100 5750 50  0001 C CNN
+F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
+F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacture"
+F 6 "RC0603JR-071KL" H 0   0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
+F 8 "311-1.0KGRCT-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    9100 5750
 	1    0    0    -1  
 $EndComp
@@ -1241,7 +1321,12 @@ P 8800 5750
 F 0 "R?" V 8880 5750 50  0000 C CNN
 F 1 "1k" V 8800 5750 50  0000 C CNN
 F 2 "" V 8730 5750 50  0001 C CNN
-F 3 "~" H 8800 5750 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 8800 5750 50  0001 C CNN
+F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
+F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacture"
+F 6 "RC0603JR-071KL" H 0   0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
+F 8 "311-1.0KGRCT-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    8800 5750
 	1    0    0    -1  
 $EndComp
@@ -1353,4 +1438,20 @@ Wire Notes Line
 	1900 7150 1900 7900
 Wire Notes Line
 	1370 7910 1370 7330
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 5C66E3D4
+P 2550 7450
+F 0 "RN?" V 2250 7450 50  0000 C CNN
+F 1 "10k" V 2750 7450 50  0000 C CNN
+F 2 "" V 2825 7450 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Yageo%20PDFs/YC102-358,TC122-164_Series_DS.pdf" H 2550 7450 50  0001 C CNN
+F 4 "RES ARRAY 4 RES 10K OHM 2012" H 2550 7450 50  0001 C CNN "Description"
+F 5 "Yageo" H 2550 7450 50  0001 C CNN "Manufacture"
+F 6 "YC324-JK-0710KL" H 2550 7450 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 2550 7450 50  0001 C CNN "Supplier"
+F 8 "YC324J-10KCT-ND" H 2550 7450 50  0001 C CNN "Supplier Part Number"
+	1    2550 7450
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
