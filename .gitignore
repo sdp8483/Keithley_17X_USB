@@ -35,3 +35,4 @@ _autosave-*
 
 # Ignore example file
 /firmware/msp430fr211x_euscia0_uart_05.c/**
+*.FCStd1
