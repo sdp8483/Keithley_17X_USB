@@ -20,7 +20,7 @@ U 1 1 5C60898C
 P 6800 3550
 F 0 "U4" H 7300 2250 60  0000 C CNN
 F 1 "MSP430FR2110" H 6800 3650 60  0000 C CNN
-F 2 "" H 7100 3000 60  0001 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 7100 3000 60  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/msp430fr2111.pdf" H 7100 3000 60  0001 C CNN
 F 4 "IC MCU 16BIT 2KB FRAM 16TSSOP" H 6800 3550 50  0001 C CNN "Description"
 F 5 "Texas Instruments" H 6800 3550 50  0001 C CNN "Manufacture"
@@ -52,7 +52,7 @@ U 1 1 5C608CE3
 P 850 1200
 F 0 "J1" H 650 1650 50  0000 L CNN
 F 1 "USB_B" H 650 1550 50  0000 L CNN
-F 2 "" H 1000 1150 50  0001 C CNN
+F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 1000 1150 50  0001 C CNN
 F 3 "https://productfinder.pulseeng.com/doc_type/WEB301/doc_num/E8144-B02022-L/doc_part/E8144-B02022-L.pdf" H 1000 1150 50  0001 C CNN
 F 4 "CONN RCPT TYPEB 4POS R/A" H 850 1200 50  0001 C CNN "Description"
 F 5 "Pulse Electronics Network" H 850 1200 50  0001 C CNN "Manufacture"
@@ -68,7 +68,7 @@ U 1 1 5C60A39E
 P 8150 1750
 F 0 "R1" V 8230 1750 50  0000 C CNN
 F 1 "27R" V 8150 1750 50  0000 C CNN
-F 2 "" V 8080 1750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 1750 50  0001 C CNN
 F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 8150 1750 50  0001 C CNN
 F 4 "RES 27 OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
 F 5 "Stackpole Electronics Inc" H 0   0   50  0001 C CNN "Manufacture"
@@ -84,7 +84,7 @@ U 1 1 5C60A3D9
 P 8150 1950
 F 0 "R2" V 8230 1950 50  0000 C CNN
 F 1 "27R" V 8150 1950 50  0000 C CNN
-F 2 "" V 8080 1950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 1950 50  0001 C CNN
 F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 8150 1950 50  0001 C CNN
 F 4 "RES 27 OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
 F 5 "Stackpole Electronics Inc" H 0   0   50  0001 C CNN "Manufacture"
@@ -146,7 +146,7 @@ U 1 1 5C60ED80
 P 8500 2450
 F 0 "C7" H 8525 2550 50  0000 L CNN
 F 1 "100nF" H 8525 2350 50  0000 L CNN
-F 2 "" H 8538 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8538 2300 50  0001 C CNN
 F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C104Z3VACTU.pdf" H 8500 2450 50  0001 C CNN
 F 4 "CAP CER 0.1UF 25V Y5V 0603" H 0   0   50  0001 C CNN "Description"
 F 5 "KEMET" H 0   0   50  0001 C CNN "Manufacture"
@@ -191,7 +191,7 @@ U 1 1 5C614CEF
 P 8000 2450
 F 0 "C6" H 8025 2550 50  0000 L CNN
 F 1 "4.7uF" H 8025 2350 50  0000 L CNN
-F 2 "" H 8038 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8038 2300 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A475KQ8NNNC.jsp" H 8000 2450 50  0001 C CNN
 F 4 "CAP CER 4.7UF 6.3V X5R 0603" H 8000 2450 50  0001 C CNN "Description"
 F 5 "Samsung Electro-Mechanics" H 8000 2450 50  0001 C CNN "Manufacture"
@@ -207,7 +207,7 @@ U 1 1 5C614D36
 P 7700 2450
 F 0 "C5" H 7725 2550 50  0000 L CNN
 F 1 "100nF" H 7725 2350 50  0000 L CNN
-F 2 "" H 7738 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7738 2300 50  0001 C CNN
 F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C104Z3VACTU.pdf" H 7700 2450 50  0001 C CNN
 F 4 "CAP CER 0.1UF 25V Y5V 0603" H 0   0   50  0001 C CNN "Description"
 F 5 "KEMET" H 0   0   50  0001 C CNN "Manufacture"
@@ -253,7 +253,7 @@ U 1 1 5C61EE9D
 P 9550 6100
 F 0 "D6" H 9550 6200 50  0000 C CNN
 F 1 "RXLED" H 9550 6000 50  0000 C CNN
-F 2 "" H 9550 6100 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9550 6100 50  0001 C CNN
 F 3 "~" H 9550 6100 50  0001 C CNN
 	1    9550 6100
 	0    -1   -1   0   
@@ -264,7 +264,7 @@ U 1 1 5C61EF2E
 P 9850 6100
 F 0 "D7" H 9850 6200 50  0000 C CNN
 F 1 "TXLED" H 9850 6000 50  0000 C CNN
-F 2 "" H 9850 6100 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9850 6100 50  0001 C CNN
 F 3 "~" H 9850 6100 50  0001 C CNN
 	1    9850 6100
 	0    -1   -1   0   
@@ -279,7 +279,7 @@ U 1 1 5C62181F
 P 9550 5750
 F 0 "R5" V 9630 5750 50  0000 C CNN
 F 1 "1k" V 9550 5750 50  0000 C CNN
-F 2 "" V 9480 5750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9480 5750 50  0001 C CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 9550 5750 50  0001 C CNN
 F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
 F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacture"
@@ -297,7 +297,7 @@ U 1 1 5C623E79
 P 9850 5750
 F 0 "R6" V 9930 5750 50  0000 C CNN
 F 1 "1k" V 9850 5750 50  0000 C CNN
-F 2 "" V 9780 5750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9780 5750 50  0001 C CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 9850 5750 50  0001 C CNN
 F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
 F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacture"
@@ -653,7 +653,7 @@ U 1 1 5C72FA8E
 P 5800 3750
 F 0 "C4" H 5825 3850 50  0000 L CNN
 F 1 "100nF" H 5825 3650 50  0000 L CNN
-F 2 "" H 5838 3600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5838 3600 50  0001 C CNN
 F 3 "https://api.kemet.com/component-edge/download/datasheet/C0603C104Z3VACTU.pdf" H 5800 3750 50  0001 C CNN
 F 4 "CAP CER 0.1UF 25V Y5V 0603" H 0   0   50  0001 C CNN "Description"
 F 5 "KEMET" H 0   0   50  0001 C CNN "Manufacture"
@@ -675,7 +675,7 @@ U 1 1 5C77169F
 P 5500 3750
 F 0 "C3" H 5525 3850 50  0000 L CNN
 F 1 "1uF" H 5525 3650 50  0000 L CNN
-F 2 "" H 5538 3600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5538 3600 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A105KQ8NNNC.jsp" H 5500 3750 50  0001 C CNN
 F 4 "CAP CER 1UF 6.3V X5R 0603" H 0   0   50  0001 C CNN "Description"
 F 5 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "Manufacture"
@@ -706,7 +706,7 @@ U 1 1 5C7B3482
 P 3150 1200
 F 0 "C1" H 3175 1300 50  0000 L CNN
 F 1 "1uF" H 3175 1100 50  0000 L CNN
-F 2 "" H 3188 1050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3188 1050 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A105KQ8NNNC.jsp" H 3150 1200 50  0001 C CNN
 F 4 "CAP CER 1UF 6.3V X5R 0603" H 0   0   50  0001 C CNN "Description"
 F 5 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "Manufacture"
@@ -757,7 +757,7 @@ U 1 1 5C7D99FD
 P 4500 1200
 F 0 "C2" H 4525 1300 50  0000 L CNN
 F 1 "1uF" H 4525 1100 50  0000 L CNN
-F 2 "" H 4538 1050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4538 1050 50  0001 C CNN
 F 3 "http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A105KQ8NNNC.jsp" H 4500 1200 50  0001 C CNN
 F 4 "CAP CER 1UF 6.3V X5R 0603" H 0   0   50  0001 C CNN "Description"
 F 5 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "Manufacture"
@@ -863,7 +863,7 @@ U 1 1 5C7323DF
 P 1750 1000
 F 0 "TH1" V 1590 1000 50  0000 C CNN
 F 1 "Thermistor_PTC" V 1870 1000 50  0000 C CNN
-F 2 "" H 1800 800 50  0001 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 1800 800 50  0001 L CNN
 F 3 "https://www.belfuse.com/resources/CircuitProtection/datasheets/0ZCJ%20Nov2016.pdf" H 1750 1000 50  0001 C CNN
 F 4 "PTC RESET FUSE 8V 500MA 1206" H 1750 1000 50  0001 C CNN "Description"
 F 5 "Bel Fuse Inc." H 1750 1000 50  0001 C CNN "Manufacture"
@@ -916,7 +916,7 @@ U 1 1 5C69A66C
 P 1850 1850
 F 0 "D2" H 1850 2025 50  0000 C CNN
 F 1 "ESD122DMXR" H 1850 1950 50  0000 C CNN
-F 2 "" H 1700 1850 50  0001 C CNN
+F 2 "TI_TVSDiode:TI_DMX_X2SON" H 1700 1850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/esd122.pdf" H 1700 1850 50  0001 C CNN
 F 4 "TVS DIODE 8.4VC 2.5A IPP 3X2SON" H 1850 1850 50  0001 C CNN "Description"
 F 5 "Texas Instruments" H 1850 1850 50  0001 C CNN "Manufacture"
@@ -1216,7 +1216,7 @@ U 1 1 5CED5A8F
 P 10250 6100
 F 0 "D8" H 10250 6200 50  0000 C CNN
 F 1 "READ" H 10250 6000 50  0000 C CNN
-F 2 "" H 10250 6100 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 10250 6100 50  0001 C CNN
 F 3 "~" H 10250 6100 50  0001 C CNN
 	1    10250 6100
 	0    -1   -1   0   
@@ -1227,7 +1227,7 @@ U 1 1 5CED5BF9
 P 10250 5750
 F 0 "R7" V 10330 5750 50  0000 C CNN
 F 1 "1k" V 10250 5750 50  0000 C CNN
-F 2 "" V 10180 5750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10180 5750 50  0001 C CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 10250 5750 50  0001 C CNN
 F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
 F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacture"
@@ -1271,7 +1271,7 @@ U 1 1 5CF89E52
 P 8800 6100
 F 0 "D4" H 8800 6200 50  0000 C CNN
 F 1 "5V" H 8800 6000 50  0000 C CNN
-F 2 "" H 8800 6100 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 8800 6100 50  0001 C CNN
 F 3 "~" H 8800 6100 50  0001 C CNN
 	1    8800 6100
 	0    -1   -1   0   
@@ -1293,7 +1293,7 @@ U 1 1 5CF957E3
 P 9100 6100
 F 0 "D5" H 9100 6200 50  0000 C CNN
 F 1 "3V3" H 9100 6000 50  0000 C CNN
-F 2 "" H 9100 6100 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 9100 6100 50  0001 C CNN
 F 3 "~" H 9100 6100 50  0001 C CNN
 	1    9100 6100
 	0    -1   -1   0   
@@ -1304,7 +1304,7 @@ U 1 1 5CF958BC
 P 9100 5750
 F 0 "R4" V 9180 5750 50  0000 C CNN
 F 1 "1k" V 9100 5750 50  0000 C CNN
-F 2 "" V 9030 5750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9030 5750 50  0001 C CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 9100 5750 50  0001 C CNN
 F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
 F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacture"
@@ -1320,7 +1320,7 @@ U 1 1 5CF9593A
 P 8800 5750
 F 0 "R3" V 8880 5750 50  0000 C CNN
 F 1 "1k" V 8800 5750 50  0000 C CNN
-F 2 "" V 8730 5750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8730 5750 50  0001 C CNN
 F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 8800 5750 50  0001 C CNN
 F 4 "RES SMD 1K OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
 F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacture"
