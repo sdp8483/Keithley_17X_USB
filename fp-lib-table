@@ -2,4 +2,5 @@
   (lib (name TI_TVSDiode)(type KiCad)(uri ${KIPRJMOD}/lib_fp/TI_TVSDiode.pretty)(options "")(descr ""))
   (lib (name SMC_Diodes)(type KiCad)(uri ${KIPRJMOD}/lib_fp/SMC_Diodes.pretty)(options "")(descr ""))
   (lib (name R_Array_Convex)(type KiCad)(uri ${KIPRJMOD}/lib_fp/R_Array_Convex.pretty)(options "")(descr ""))
+  (lib (name Terminal_Keystone)(type KiCad)(uri ${KIPRJMOD}/lib_fp/Terminal_Keystone.pretty)(options "")(descr ""))
 )

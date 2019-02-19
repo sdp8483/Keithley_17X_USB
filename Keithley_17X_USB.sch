@@ -1584,19 +1584,29 @@ U 1 1 5C6C1140
 P 6900 5900
 F 0 "H5" H 6900 6100 50  0000 C CNN
 F 1 "M3_RA" H 6900 6025 50  0000 C CNN
-F 2 "" H 6900 5900 50  0001 C CNN
-F 3 "~" H 6900 5900 50  0001 C CNN
+F 2 "Terminal_Keystone:Keystone_Screw-Terminal_7761_RightAngle" H 6900 5900 50  0001 C CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=3928" H 6900 5900 50  0001 C CNN
+F 4 "TERM SCREW M3 4 PIN PCB RA" H 6900 5900 50  0001 C CNN "Description"
+F 5 "Keystone Electronics" H 6900 5900 50  0001 C CNN "Manufacture"
+F 6 "7761" H 6900 5900 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 6900 5900 50  0001 C CNN "Supplier"
+F 8 "36-7761-ND" H 6900 5900 50  0001 C CNN "Supplier Part Number"
 	1    6900 5900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H6
-U 1 1 5C6C11B3
+U 1 1 5C6C2A25
 P 7300 5900
 F 0 "H6" H 7300 6100 50  0000 C CNN
 F 1 "M3_RA" H 7300 6025 50  0000 C CNN
-F 2 "" H 7300 5900 50  0001 C CNN
-F 3 "~" H 7300 5900 50  0001 C CNN
+F 2 "Terminal_Keystone:Keystone_Screw-Terminal_7761_RightAngle" H 7300 5900 50  0001 C CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=3928" H 7300 5900 50  0001 C CNN
+F 4 "TERM SCREW M3 4 PIN PCB RA" H 7300 5900 50  0001 C CNN "Description"
+F 5 "Keystone Electronics" H 7300 5900 50  0001 C CNN "Manufacture"
+F 6 "7761" H 7300 5900 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 7300 5900 50  0001 C CNN "Supplier"
+F 8 "36-7761-ND" H 7300 5900 50  0001 C CNN "Supplier Part Number"
 	1    7300 5900
 	1    0    0    -1  
 $EndComp
