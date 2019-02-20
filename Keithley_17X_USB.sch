@@ -861,7 +861,7 @@ L Device:Thermistor_PTC TH1
 U 1 1 5C7323DF
 P 1750 1000
 F 0 "TH1" V 1590 1000 50  0000 C CNN
-F 1 "Thermistor_PTC" V 1870 1000 50  0000 C CNN
+F 1 "0ZCJ0050FF2G" V 1870 1000 50  0000 C CNN
 F 2 "Fuse:Fuse_1206_3216Metric" H 1800 800 50  0001 L CNN
 F 3 "https://www.belfuse.com/resources/CircuitProtection/datasheets/0ZCJ%20Nov2016.pdf" H 1750 1000 50  0001 C CNN
 F 4 "PTC RESET FUSE 8V 500MA 1206" H 1750 1000 50  0001 C CNN "Description"
