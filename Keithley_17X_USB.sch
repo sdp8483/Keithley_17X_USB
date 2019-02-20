@@ -631,7 +631,6 @@ Wire Wire Line
 	7550 3550 8050 3550
 Text Label 8050 3950 2    50   ~ 0
 READ
-NoConn ~ 7550 4050
 Wire Wire Line
 	5800 3550 6050 3550
 $Comp
@@ -1009,15 +1008,15 @@ D-
 Text Notes 5350 3150 0    50   ~ 0
 Keithley to UART Interface Microcontroller
 Wire Notes Line
-	4800 3150 8150 3150
+	4800 3150 8600 3150
 Wire Notes Line
-	8150 4950 4800 4950
+	8600 4950 4800 4950
 Wire Notes Line
 	4800 4950 4800 3050
 Wire Notes Line
-	4800 3050 8150 3050
+	4800 3050 8600 3050
 Wire Notes Line
-	8150 3050 8150 4950
+	8600 3050 8600 4950
 Text Notes 3000 650  0    50   ~ 0
 3.3V Low Drop Out Regulator
 Wire Notes Line
@@ -1610,4 +1609,81 @@ F 8 "36-7761-ND" H 7300 5900 50  0001 C CNN "Supplier Part Number"
 	1    7300 5900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JP1
+U 1 1 5C6FA2BD
+P 8350 4050
+F 0 "JP1" V 8250 3950 50  0000 C CNN
+F 1 "RATE" H 8350 4160 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8350 4050 50  0001 C CNN
+F 3 "~" H 8350 4050 50  0001 C CNN
+	1    8350 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7550 4050 8200 4050
+$Comp
+L Device:R R8
+U 1 1 5C7417CF
+P 8350 3600
+F 0 "R8" V 8430 3600 50  0000 C CNN
+F 1 "1k" V 8350 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8280 3600 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 8350 3600 50  0001 C CNN
+F 4 "RES SMD 1K OHM 5% 1/10W 0603" H -1900 -2150 50  0001 C CNN "Description"
+F 5 "Yageo" H -1900 -2150 50  0001 C CNN "Manufacture"
+F 6 "RC0603JR-071KL" H -1900 -2150 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H -1900 -2150 50  0001 C CNN "Supplier"
+F 8 "311-1.0KGRCT-ND" H -1900 -2150 50  0001 C CNN "Supplier Part Number"
+	1    8350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5C7418A1
+P 8350 4500
+F 0 "R9" V 8430 4500 50  0000 C CNN
+F 1 "1k" V 8350 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8280 4500 50  0001 C CNN
+F 3 "http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_10.pdf" H 8350 4500 50  0001 C CNN
+F 4 "RES SMD 1K OHM 5% 1/10W 0603" H -1900 -1250 50  0001 C CNN "Description"
+F 5 "Yageo" H -1900 -1250 50  0001 C CNN "Manufacture"
+F 6 "RC0603JR-071KL" H -1900 -1250 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H -1900 -1250 50  0001 C CNN "Supplier"
+F 8 "311-1.0KGRCT-ND" H -1900 -1250 50  0001 C CNN "Supplier Part Number"
+	1    8350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5C741A3C
+P 8350 3400
+F 0 "#PWR0103" H 8350 3250 50  0001 C CNN
+F 1 "+3V3" H 8350 3540 50  0000 C CNN
+F 2 "" H 8350 3400 50  0001 C CNN
+F 3 "" H 8350 3400 50  0001 C CNN
+	1    8350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5C741A9B
+P 8350 4700
+F 0 "#PWR0104" H 8350 4450 50  0001 C CNN
+F 1 "GND" H 8350 4550 50  0000 C CNN
+F 2 "" H 8350 4700 50  0001 C CNN
+F 3 "" H 8350 4700 50  0001 C CNN
+	1    8350 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4700 8350 4650
+Wire Wire Line
+	8350 3800 8350 3750
+Wire Wire Line
+	8350 3450 8350 3400
+Wire Wire Line
+	8350 4350 8350 4300
+Text Label 8050 4050 2    50   ~ 0
+RATE
 $EndSCHEMATC
