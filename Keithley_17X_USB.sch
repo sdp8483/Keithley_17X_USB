@@ -117,7 +117,6 @@ F 3 "" H 850 2250 50  0001 C CNN
 	1    850  2250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 750  1600
 $Comp
 L power:GND #PWR026
 U 1 1 5C60BB8D
@@ -895,7 +894,7 @@ F 8 "296-45327-1-ND" H 1250 1850 50  0001 C CNN "Supplier Part Number"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	850  1600 850  2250
+	850  1600 850  1900
 $Comp
 L power:GND #PWR03
 U 1 1 5C693468
@@ -1456,157 +1455,157 @@ $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5C68020E
-P 5300 5950
-F 0 "H1" H 5300 6200 50  0000 C CNN
-F 1 "M3" H 5300 6125 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5300 5950 50  0001 C CNN
-F 3 "~" H 5300 5950 50  0001 C CNN
-	1    5300 5950
+P 4900 5350
+F 0 "H1" H 4900 5600 50  0000 C CNN
+F 1 "M3" H 4900 5525 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 4900 5350 50  0001 C CNN
+F 3 "~" H 4900 5350 50  0001 C CNN
+	1    4900 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR018
 U 1 1 5C680CDB
-P 5900 6250
-F 0 "#PWR018" H 5900 6000 50  0001 C CNN
-F 1 "GND" H 5900 6100 50  0000 C CNN
-F 2 "" H 5900 6250 50  0001 C CNN
-F 3 "" H 5900 6250 50  0001 C CNN
-	1    5900 6250
+P 5500 5650
+F 0 "#PWR018" H 5500 5400 50  0001 C CNN
+F 1 "GND" H 5500 5500 50  0000 C CNN
+F 2 "" H 5500 5650 50  0001 C CNN
+F 3 "" H 5500 5650 50  0001 C CNN
+	1    5500 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 6050 5300 6150
+	4900 5450 4900 5550
 Wire Wire Line
-	5300 6150 5700 6150
+	4900 5550 5300 5550
 Wire Wire Line
-	6500 6150 6500 6050
+	6100 5550 6100 5450
 Wire Wire Line
-	6100 6050 6100 6150
-Connection ~ 6100 6150
+	5700 5450 5700 5550
+Connection ~ 5700 5550
 Wire Wire Line
-	6100 6150 6500 6150
+	5700 5550 6100 5550
 Wire Wire Line
-	5700 6050 5700 6150
-Connection ~ 5700 6150
+	5300 5450 5300 5550
+Connection ~ 5300 5550
 Wire Wire Line
-	5700 6150 5900 6150
+	5300 5550 5500 5550
 Wire Wire Line
-	5900 6250 5900 6150
-Connection ~ 5900 6150
+	5500 5650 5500 5550
+Connection ~ 5500 5550
 Wire Wire Line
-	5900 6150 6100 6150
+	5500 5550 5700 5550
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 5C6B7AB1
-P 5700 5950
-F 0 "H2" H 5700 6200 50  0000 C CNN
-F 1 "M3" H 5700 6125 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5700 5950 50  0001 C CNN
-F 3 "~" H 5700 5950 50  0001 C CNN
-	1    5700 5950
+P 5300 5350
+F 0 "H2" H 5300 5600 50  0000 C CNN
+F 1 "M3" H 5300 5525 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5300 5350 50  0001 C CNN
+F 3 "~" H 5300 5350 50  0001 C CNN
+	1    5300 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 5C6B7B0F
-P 6100 5950
-F 0 "H3" H 6100 6200 50  0000 C CNN
-F 1 "M3" H 6100 6125 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6100 5950 50  0001 C CNN
-F 3 "~" H 6100 5950 50  0001 C CNN
-	1    6100 5950
+P 5700 5350
+F 0 "H3" H 5700 5600 50  0000 C CNN
+F 1 "M3" H 5700 5525 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5700 5350 50  0001 C CNN
+F 3 "~" H 5700 5350 50  0001 C CNN
+	1    5700 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 5C6B7B6B
-P 6500 5950
-F 0 "H4" H 6500 6200 50  0000 C CNN
-F 1 "M3" H 6500 6125 50  0000 C CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6500 5950 50  0001 C CNN
-F 3 "~" H 6500 5950 50  0001 C CNN
-	1    6500 5950
+P 6100 5350
+F 0 "H4" H 6100 5600 50  0000 C CNN
+F 1 "M3" H 6100 5525 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6100 5350 50  0001 C CNN
+F 3 "~" H 6100 5350 50  0001 C CNN
+	1    6100 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5C804C0D
-P 5100 7450
-F 0 "#FLG0101" H 5100 7525 50  0001 C CNN
-F 1 "PWR_FLAG" H 5100 7600 50  0000 C CNN
-F 2 "" H 5100 7450 50  0001 C CNN
-F 3 "~" H 5100 7450 50  0001 C CNN
-	1    5100 7450
+P 7400 5300
+F 0 "#FLG0101" H 7400 5375 50  0001 C CNN
+F 1 "PWR_FLAG" H 7400 5450 50  0000 C CNN
+F 2 "" H 7400 5300 50  0001 C CNN
+F 3 "~" H 7400 5300 50  0001 C CNN
+	1    7400 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDA #PWR0101
 U 1 1 5C804D47
-P 5100 7500
-F 0 "#PWR0101" H 5100 7250 50  0001 C CNN
-F 1 "GNDA" H 5100 7350 50  0000 C CNN
-F 2 "" H 5100 7500 50  0001 C CNN
-F 3 "" H 5100 7500 50  0001 C CNN
-	1    5100 7500
+P 7400 5350
+F 0 "#PWR0101" H 7400 5100 50  0001 C CNN
+F 1 "GNDA" H 7400 5200 50  0000 C CNN
+F 2 "" H 7400 5350 50  0001 C CNN
+F 3 "" H 7400 5350 50  0001 C CNN
+	1    7400 5350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 7500 5100 7450
+	7400 5350 7400 5300
 $Comp
 L power:+5V #PWR0102
 U 1 1 5C830718
-P 5500 7500
-F 0 "#PWR0102" H 5500 7350 50  0001 C CNN
-F 1 "+5V" H 5500 7640 50  0000 C CNN
-F 2 "" H 5500 7500 50  0001 C CNN
-F 3 "" H 5500 7500 50  0001 C CNN
-	1    5500 7500
+P 7800 5350
+F 0 "#PWR0102" H 7800 5200 50  0001 C CNN
+F 1 "+5V" H 7800 5490 50  0000 C CNN
+F 2 "" H 7800 5350 50  0001 C CNN
+F 3 "" H 7800 5350 50  0001 C CNN
+	1    7800 5350
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5C84C9A6
-P 5500 7450
-F 0 "#FLG0102" H 5500 7525 50  0001 C CNN
-F 1 "PWR_FLAG" H 5500 7600 50  0000 C CNN
-F 2 "" H 5500 7450 50  0001 C CNN
-F 3 "~" H 5500 7450 50  0001 C CNN
-	1    5500 7450
+P 7800 5300
+F 0 "#FLG0102" H 7800 5375 50  0001 C CNN
+F 1 "PWR_FLAG" H 7800 5450 50  0000 C CNN
+F 2 "" H 7800 5300 50  0001 C CNN
+F 3 "~" H 7800 5300 50  0001 C CNN
+	1    7800 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 7450 5500 7500
+	7800 5300 7800 5350
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 5C6C1140
-P 6900 5900
-F 0 "H5" H 6900 6100 50  0000 C CNN
-F 1 "M3_RA" H 6900 6025 50  0000 C CNN
-F 2 "Terminal_Keystone:Keystone_Screw-Terminal_7761_RightAngle" H 6900 5900 50  0001 C CNN
-F 3 "http://www.keyelco.com/product-pdf.cfm?p=3928" H 6900 5900 50  0001 C CNN
-F 4 "TERM SCREW M3 4 PIN PCB RA" H 6900 5900 50  0001 C CNN "Description"
-F 5 "Keystone Electronics" H 6900 5900 50  0001 C CNN "Manufacture"
-F 6 "7761" H 6900 5900 50  0001 C CNN "Mfg Part Number"
-F 7 "Digi-Key" H 6900 5900 50  0001 C CNN "Supplier"
-F 8 "36-7761-ND" H 6900 5900 50  0001 C CNN "Supplier Part Number"
-	1    6900 5900
+P 6500 5300
+F 0 "H5" H 6500 5500 50  0000 C CNN
+F 1 "M3_RA" H 6500 5425 50  0000 C CNN
+F 2 "Terminal_Keystone:Keystone_Screw-Terminal_7761_RightAngle" H 6500 5300 50  0001 C CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=3928" H 6500 5300 50  0001 C CNN
+F 4 "TERM SCREW M3 4 PIN PCB RA" H 6500 5300 50  0001 C CNN "Description"
+F 5 "Keystone Electronics" H 6500 5300 50  0001 C CNN "Manufacture"
+F 6 "7761" H 6500 5300 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 6500 5300 50  0001 C CNN "Supplier"
+F 8 "36-7761-ND" H 6500 5300 50  0001 C CNN "Supplier Part Number"
+	1    6500 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H6
 U 1 1 5C6C2A25
-P 7300 5900
-F 0 "H6" H 7300 6100 50  0000 C CNN
-F 1 "M3_RA" H 7300 6025 50  0000 C CNN
-F 2 "Terminal_Keystone:Keystone_Screw-Terminal_7761_RightAngle" H 7300 5900 50  0001 C CNN
-F 3 "http://www.keyelco.com/product-pdf.cfm?p=3928" H 7300 5900 50  0001 C CNN
-F 4 "TERM SCREW M3 4 PIN PCB RA" H 7300 5900 50  0001 C CNN "Description"
-F 5 "Keystone Electronics" H 7300 5900 50  0001 C CNN "Manufacture"
-F 6 "7761" H 7300 5900 50  0001 C CNN "Mfg Part Number"
-F 7 "Digi-Key" H 7300 5900 50  0001 C CNN "Supplier"
-F 8 "36-7761-ND" H 7300 5900 50  0001 C CNN "Supplier Part Number"
-	1    7300 5900
+P 6900 5300
+F 0 "H6" H 6900 5500 50  0000 C CNN
+F 1 "M3_RA" H 6900 5425 50  0000 C CNN
+F 2 "Terminal_Keystone:Keystone_Screw-Terminal_7761_RightAngle" H 6900 5300 50  0001 C CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=3928" H 6900 5300 50  0001 C CNN
+F 4 "TERM SCREW M3 4 PIN PCB RA" H 6900 5300 50  0001 C CNN "Description"
+F 5 "Keystone Electronics" H 6900 5300 50  0001 C CNN "Manufacture"
+F 6 "7761" H 6900 5300 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 6900 5300 50  0001 C CNN "Supplier"
+F 8 "36-7761-ND" H 6900 5300 50  0001 C CNN "Supplier Part Number"
+	1    6900 5300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1690,4 +1689,15 @@ Text Label 7550 1750 0    50   ~ 0
 USBDM
 Text Label 7550 1950 0    50   ~ 0
 USBDP
+Wire Wire Line
+	750  1600 750  1900
+Wire Wire Line
+	750  1900 850  1900
+Connection ~ 850  1900
+Wire Wire Line
+	850  1900 850  2250
+Text Notes 750  1900 1    50   ~ 0
+Note 1
+Text Notes 6300 6850 0    50   ~ 0
+Note 1: https://www.eevblog.com/forum/projects/usb-shield-ground-connection/msg597342/#msg597342
 $EndSCHEMATC
