@@ -1577,35 +1577,35 @@ $EndComp
 Wire Wire Line
 	7800 5300 7800 5350
 $Comp
-L Mechanical:MountingHole H5
+L Mechanical:MountingHole_Pad H5
 U 1 1 5C6C1140
-P 6500 5300
-F 0 "H5" H 6500 5500 50  0000 C CNN
-F 1 "M3_RA" H 6500 5425 50  0000 C CNN
-F 2 "Terminal_Keystone:Keystone_Screw-Terminal_7761_RightAngle" H 6500 5300 50  0001 C CNN
-F 3 "http://www.keyelco.com/product-pdf.cfm?p=3928" H 6500 5300 50  0001 C CNN
-F 4 "TERM SCREW M3 4 PIN PCB RA" H 6500 5300 50  0001 C CNN "Description"
-F 5 "Keystone Electronics" H 6500 5300 50  0001 C CNN "Manufacture"
-F 6 "7761" H 6500 5300 50  0001 C CNN "Mfg Part Number"
-F 7 "Digi-Key" H 6500 5300 50  0001 C CNN "Supplier"
-F 8 "36-7761-ND" H 6500 5300 50  0001 C CNN "Supplier Part Number"
-	1    6500 5300
+P 6550 5350
+F 0 "H5" H 6550 5550 50  0000 C CNN
+F 1 "M3_RA" H 6550 5475 50  0000 C CNN
+F 2 "Terminal_Keystone:Keystone_Screw-Terminal_7761_RightAngle" H 6550 5350 50  0001 C CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=3928" H 6550 5350 50  0001 C CNN
+F 4 "TERM SCREW M3 4 PIN PCB RA" H 6550 5350 50  0001 C CNN "Description"
+F 5 "Keystone Electronics" H 6550 5350 50  0001 C CNN "Manufacture"
+F 6 "7761" H 6550 5350 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 6550 5350 50  0001 C CNN "Supplier"
+F 8 "36-7761-ND" H 6550 5350 50  0001 C CNN "Supplier Part Number"
+	1    6550 5350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H6
+L Mechanical:MountingHole_Pad H6
 U 1 1 5C6C2A25
-P 6900 5300
-F 0 "H6" H 6900 5500 50  0000 C CNN
-F 1 "M3_RA" H 6900 5425 50  0000 C CNN
-F 2 "Terminal_Keystone:Keystone_Screw-Terminal_7761_RightAngle" H 6900 5300 50  0001 C CNN
-F 3 "http://www.keyelco.com/product-pdf.cfm?p=3928" H 6900 5300 50  0001 C CNN
-F 4 "TERM SCREW M3 4 PIN PCB RA" H 6900 5300 50  0001 C CNN "Description"
-F 5 "Keystone Electronics" H 6900 5300 50  0001 C CNN "Manufacture"
-F 6 "7761" H 6900 5300 50  0001 C CNN "Mfg Part Number"
-F 7 "Digi-Key" H 6900 5300 50  0001 C CNN "Supplier"
-F 8 "36-7761-ND" H 6900 5300 50  0001 C CNN "Supplier Part Number"
-	1    6900 5300
+P 6900 5350
+F 0 "H6" H 6900 5550 50  0000 C CNN
+F 1 "M3_RA" H 6900 5475 50  0000 C CNN
+F 2 "Terminal_Keystone:Keystone_Screw-Terminal_7761_RightAngle" H 6900 5350 50  0001 C CNN
+F 3 "http://www.keyelco.com/product-pdf.cfm?p=3928" H 6900 5350 50  0001 C CNN
+F 4 "TERM SCREW M3 4 PIN PCB RA" H 6900 5350 50  0001 C CNN "Description"
+F 5 "Keystone Electronics" H 6900 5350 50  0001 C CNN "Manufacture"
+F 6 "7761" H 6900 5350 50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H 6900 5350 50  0001 C CNN "Supplier"
+F 8 "36-7761-ND" H 6900 5350 50  0001 C CNN "Supplier Part Number"
+	1    6900 5350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1700,4 +1700,30 @@ Text Notes 750  1900 1    50   ~ 0
 Note 1
 Text Notes 6300 6850 0    50   ~ 0
 Note 1: https://www.eevblog.com/forum/projects/usb-shield-ground-connection/msg597342/#msg597342
+Wire Wire Line
+	6550 5450 6550 5650
+Wire Wire Line
+	6900 5450 6900 5650
+$Comp
+L power:GND #PWR?
+U 1 1 5C93C3FD
+P 6550 5650
+F 0 "#PWR?" H 6550 5400 50  0001 C CNN
+F 1 "GND" H 6550 5500 50  0000 C CNN
+F 2 "" H 6550 5650 50  0001 C CNN
+F 3 "" H 6550 5650 50  0001 C CNN
+	1    6550 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C93C45C
+P 6900 5650
+F 0 "#PWR?" H 6900 5400 50  0001 C CNN
+F 1 "GND" H 6900 5500 50  0000 C CNN
+F 2 "" H 6900 5650 50  0001 C CNN
+F 3 "" H 6900 5650 50  0001 C CNN
+	1    6900 5650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
