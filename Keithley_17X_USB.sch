@@ -549,13 +549,13 @@ Text Label 2250 3700 0    50   ~ 0
 SIGN_IN
 Text Label 2250 4100 0    50   ~ 0
 OVERRANGE_IN
-Text Label 2250 5700 0    50   ~ 0
-B1_IN
-Text Label 2250 6100 0    50   ~ 0
-B2_IN
-Text Label 2250 6500 0    50   ~ 0
-B4_IN
 Text Label 2250 6900 0    50   ~ 0
+B1_IN
+Text Label 2250 6500 0    50   ~ 0
+B2_IN
+Text Label 2250 6100 0    50   ~ 0
+B4_IN
+Text Label 2250 5700 0    50   ~ 0
 B8_IN
 Wire Wire Line
 	3850 2900 4550 2900
@@ -581,13 +581,13 @@ Text Label 4550 3700 2    50   ~ 0
 SIGN
 Text Label 4550 4100 2    50   ~ 0
 OVERRANGE
-Text Label 4550 5700 2    50   ~ 0
-B1
-Text Label 4550 6100 2    50   ~ 0
-B2
-Text Label 4550 6500 2    50   ~ 0
-B4
 Text Label 4550 6900 2    50   ~ 0
+B1
+Text Label 4550 6500 2    50   ~ 0
+B2
+Text Label 4550 6100 2    50   ~ 0
+B4
+Text Label 4550 5700 2    50   ~ 0
 B8
 Wire Wire Line
 	7550 4150 8050 4150
@@ -1121,25 +1121,25 @@ Wire Wire Line
 Wire Wire Line
 	3250 3300 1100 3300
 Wire Wire Line
-	1000 5700 1000 5200
+	1000 6900 1000 5200
 Wire Wire Line
-	3250 5700 1000 5700
+	3250 6900 1000 6900
 Wire Wire Line
-	900  6100 900  5100
+	900  6500 900  5100
 Wire Wire Line
-	3250 6100 900  6100
+	3250 6500 900  6500
 Wire Wire Line
 	1350 5100 900  5100
 Wire Wire Line
-	800  6500 800  5000
+	800  6100 800  5000
 Wire Wire Line
-	3250 6500 800  6500
+	3250 6100 800  6100
 Wire Wire Line
 	1350 5000 800  5000
 Wire Wire Line
-	700  6900 700  4900
+	700  5700 700  4900
 Wire Wire Line
-	3250 6900 700  6900
+	3250 5700 700  5700
 Wire Wire Line
 	1350 4900 700  4900
 Wire Notes Line
