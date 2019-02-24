@@ -307,8 +307,6 @@ F 8 "311-1.0KGRCT-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9550 5500 9700 5500
-Wire Wire Line
 	9850 5500 9850 5600
 Wire Wire Line
 	9550 5900 9550 5950
@@ -810,22 +808,6 @@ $EndComp
 Wire Wire Line
 	5500 3400 5500 3550
 Connection ~ 5500 3550
-$Comp
-L power:+5V #PWR027
-U 1 1 5C687537
-P 9700 5400
-F 0 "#PWR027" H 9700 5250 50  0001 C CNN
-F 1 "+5V" H 9700 5540 50  0000 C CNN
-F 2 "" H 9700 5400 50  0001 C CNN
-F 3 "" H 9700 5400 50  0001 C CNN
-	1    9700 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9700 5400 9700 5500
-Connection ~ 9700 5500
-Wire Wire Line
-	9700 5500 9850 5500
 $Comp
 L power:+5V #PWR07
 U 1 1 5C6E6A45
@@ -1727,5 +1709,9 @@ F 3 "" H 6900 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8500 1100 0    50   ~ 0
+VCCIO
+Wire Wire Line
+	9550 5500 9850 5500
+Text Label 9600 5500 0    50   ~ 0
 VCCIO
 $EndSCHEMATC
