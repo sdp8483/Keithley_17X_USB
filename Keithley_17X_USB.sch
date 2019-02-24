@@ -65,33 +65,33 @@ $EndComp
 $Comp
 L Device:R R1
 U 1 1 5C60A39E
-P 8150 1750
-F 0 "R1" V 8230 1750 50  0000 C CNN
-F 1 "27R" V 8150 1750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 1750 50  0001 C CNN
-F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 8150 1750 50  0001 C CNN
-F 4 "RES 27 OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
-F 5 "Stackpole Electronics Inc" H 0   0   50  0001 C CNN "Manufacture"
-F 6 "RMCF0603JT27R0" H 0   0   50  0001 C CNN "Mfg Part Number"
-F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
-F 8 "RMCF0603JT27R0CT-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
-	1    8150 1750
+P 7400 1750
+F 0 "R1" V 7480 1750 50  0000 C CNN
+F 1 "27R" V 7400 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7330 1750 50  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 7400 1750 50  0001 C CNN
+F 4 "RES 27 OHM 5% 1/10W 0603" H -750 0   50  0001 C CNN "Description"
+F 5 "Stackpole Electronics Inc" H -750 0   50  0001 C CNN "Manufacture"
+F 6 "RMCF0603JT27R0" H -750 0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H -750 0   50  0001 C CNN "Supplier"
+F 8 "RMCF0603JT27R0CT-ND" H -750 0   50  0001 C CNN "Supplier Part Number"
+	1    7400 1750
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5C60A3D9
-P 8150 1950
-F 0 "R2" V 8230 1950 50  0000 C CNN
-F 1 "27R" V 8150 1950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 1950 50  0001 C CNN
-F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 8150 1950 50  0001 C CNN
-F 4 "RES 27 OHM 5% 1/10W 0603" H 0   0   50  0001 C CNN "Description"
-F 5 "Stackpole Electronics Inc" H 0   0   50  0001 C CNN "Manufacture"
-F 6 "RMCF0603JT27R0" H 0   0   50  0001 C CNN "Mfg Part Number"
-F 7 "Digi-Key" H 0   0   50  0001 C CNN "Supplier"
-F 8 "RMCF0603JT27R0CT-ND" H 0   0   50  0001 C CNN "Supplier Part Number"
-	1    8150 1950
+P 7400 1950
+F 0 "R2" V 7480 1950 50  0000 C CNN
+F 1 "27R" V 7400 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7330 1950 50  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 7400 1950 50  0001 C CNN
+F 4 "RES 27 OHM 5% 1/10W 0603" H -750 0   50  0001 C CNN "Description"
+F 5 "Stackpole Electronics Inc" H -750 0   50  0001 C CNN "Manufacture"
+F 6 "RMCF0603JT27R0" H -750 0   50  0001 C CNN "Mfg Part Number"
+F 7 "Digi-Key" H -750 0   50  0001 C CNN "Supplier"
+F 8 "RMCF0603JT27R0CT-ND" H -750 0   50  0001 C CNN "Supplier Part Number"
+	1    7400 1950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -99,13 +99,13 @@ Wire Wire Line
 Wire Wire Line
 	8350 1800 8350 1750
 Wire Wire Line
-	8350 1750 8300 1750
+	8350 1750 7550 1750
 Wire Wire Line
 	8650 1900 8350 1900
 Wire Wire Line
 	8350 1900 8350 1950
 Wire Wire Line
-	8350 1950 8300 1950
+	8350 1950 7550 1950
 $Comp
 L power:GND #PWR01
 U 1 1 5C60B435
@@ -986,24 +986,24 @@ Connection ~ 7850 2250
 Wire Wire Line
 	7850 2250 8000 2250
 Wire Wire Line
-	8000 1750 7550 1750
+	7250 1750 7050 1750
 Wire Wire Line
-	8000 1950 7550 1950
-Text Notes 7450 650  0    50   ~ 0
+	7250 1950 7050 1950
+Text Notes 6950 650  0    50   ~ 0
 USB to UART Interface
 Wire Notes Line
-	7450 650  10450 650 
+	6950 650  10450 650 
 Wire Notes Line
-	10450 2950 7450 2950
+	10450 2950 6950 2950
 Wire Notes Line
-	7450 2950 7450 550 
+	6950 2950 6950 550 
 Wire Notes Line
-	7450 550  10450 550 
+	6950 550  10450 550 
 Wire Notes Line
 	10450 550  10450 2950
-Text Label 7550 1950 0    50   ~ 0
+Text Label 7050 1950 0    50   ~ 0
 D+
-Text Label 7550 1750 0    50   ~ 0
+Text Label 7050 1750 0    50   ~ 0
 D-
 Text Notes 5350 3150 0    50   ~ 0
 Keithley to UART Interface Microcontroller
@@ -1686,4 +1686,8 @@ Wire Wire Line
 	8350 4350 8350 4300
 Text Label 8050 4050 2    50   ~ 0
 RATE
+Text Label 7550 1750 0    50   ~ 0
+USBDM
+Text Label 7550 1950 0    50   ~ 0
+USBDP
 $EndSCHEMATC
