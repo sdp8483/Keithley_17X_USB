@@ -1726,4 +1726,6 @@ F 3 "" H 6900 5650 50  0001 C CNN
 	1    6900 5650
 	1    0    0    -1  
 $EndComp
+Text Label 8500 1100 0    50   ~ 0
+VCCIO
 $EndSCHEMATC
