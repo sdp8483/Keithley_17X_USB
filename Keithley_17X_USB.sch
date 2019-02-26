@@ -594,13 +594,13 @@ Text Label 8050 4150 2    50   ~ 0
 TXD
 Text Label 8050 4250 2    50   ~ 0
 RXD
-Text Label 8050 4450 2    50   ~ 0
-CLK
-Text Label 8050 4550 2    50   ~ 0
-D5
-Text Label 8050 4650 2    50   ~ 0
-SIGN
 Text Label 8050 4750 2    50   ~ 0
+CLK
+Text Label 8050 4650 2    50   ~ 0
+D5
+Text Label 8050 4450 2    50   ~ 0
+SIGN
+Text Label 8050 4550 2    50   ~ 0
 OVERRANGE
 Wire Wire Line
 	7550 4450 8050 4450
