@@ -1615,11 +1615,6 @@
       (net 7 "Net-(D3-Pad2)"))
     (pad 2 smd roundrect (at 1.4 0) (size 1.25 1.75) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.2)
       (net 4 "Net-(D1-Pad1)"))
-    (model ${KISYS3DMOD}/Fuse.3dshapes/Fuse_1206_3216Metric.wrl
-      (at (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     (model ${KIPRJMOD}/3d_models/0ZCJ.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
