@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Keithley_17X_USB-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -31,7 +31,7 @@ F 8 "296-47343-1-ND" H 6800 3550 50  0001 C CNN "Supplier Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_USB:FT230XS U5
+L Keithley_17X_USB-rescue:FT230XS-Interface_USB U5
 U 1 1 5C608B9C
 P 9350 1900
 F 0 "U5" H 8800 2500 50  0000 L CNN
