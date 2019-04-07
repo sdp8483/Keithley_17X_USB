@@ -33,8 +33,11 @@ int main(void)
 
     while (1)
     {
-        P2IFG &= ~BIT0;                         // clear pending interrupts
-        P2IE |= BIT0;                           // enable interrupt on P2.0, Keithley CLK
+        //P2IFG &= ~BIT0;                         // clear pending interrupts
+        //P2IE |= BIT0;                           // enable interrupt on P2.0, Keithley CLK
+        P2IFG &= ~BIT6;                         // clear pending interrupts
+        P2IE |= BIT6;                           // enable interrupt on P2.6, Keithley D5
+
         __bis_SR_register(LPM3_bits | GIE);     // Enter LPM3, interrupts enabled
         delay_512us();                          // delay so reading is near middle of signals
         TB0CTL ^= MC__UP;                       // toggle timer on
@@ -52,11 +55,12 @@ int main(void)
 // =============================================
 
 
-// P2 interrupt, triggered by P2.0 rising edge
+// P2 interrupt, triggered by P2.6 rising edge
 #pragma vector=PORT2_VECTOR
 __interrupt void PORT2_ISR(void)
 {
-    P2IE &= ~BIT0;                              // disable any further interrupts
+    //P2IE &= ~BIT0;                              // disable any further interrupts
+    P2IE &= ~BIT6;                              // disable any further interrupts
     __bic_SR_register_on_exit(LPM3_bits);       // Exit LPM3
 }
 

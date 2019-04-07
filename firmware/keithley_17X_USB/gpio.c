@@ -42,7 +42,8 @@ void Init_GPIO()
     P1DIR |= BIT4;                              // Use P1.4 as timing debug output
     P1OUT &= ~BIT4;                             // Set to low initially
 
-    P2IES &= ~BIT0;                             // Interrupt when P2.0 transitions from low to high
+    //P2IES &= ~BIT0;                             // Interrupt when P2.0 transitions from low to high
+    P2IES &= ~BIT6;                             // Interrupt when P2.6 transitions from low to high
 
     // Configure unused pins
     P1DIR |= BIT5 | BIT6 | BIT7;
