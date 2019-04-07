@@ -9,7 +9,7 @@
 #define KEITHLEY_H_
 
 #define OVER_RANGE_ACTIVE   0
-#define OVER_RANGE_INACTIVE BIT7
+#define OVER_RANGE_INACTIVE BIT1
 
 void read_databus(char *string);
 

@@ -15,10 +15,10 @@ void Init_GPIO()
      *  All inputs are inverted due to opto, this is reflected in notes
      *  Signal  | Keithley Pin  | MSP430 Port   | NOTES
      *  ===============================================
-     *  CLK     | 14            | P2.0          | high when a new value is ready
-     *  D5      | 8             | P2.1          | low when left most digit is being displayed
-     *  SIGN    | 3             | P2.6          | low when input is +, high when -
-     *  OVER    | 6             | P2.7          | low when input is over range
+     *  CLK     | 14            | P2.7          | high when a new value is ready
+     *  D5      | 8             | P2.6          | high when left most digit is being displayed
+     *  SIGN    | 3             | P2.0          | low when input is +, high when -
+     *  OVER    | 6             | P2.1          | low when input is over range
      *   RANGE  |               |               |
      *  B1      | 10            | P1.0          | inverted bit0
      *  B2      | 11            | P1.1          | inverted bit1
@@ -43,7 +43,7 @@ void Init_GPIO()
     P1OUT &= ~BIT4;                             // Set to low initially
 
     //P2IES &= ~BIT0;                             // Interrupt when P2.0 transitions from low to high
-    P2IES &= ~BIT6;                             // Interrupt when P2.6 transitions from low to high
+    P2IES |= BIT6;                             // Interrupt when P2.6 transitions from high to low
 
     // Configure unused pins
     P1DIR |= BIT5 | BIT6 | BIT7;

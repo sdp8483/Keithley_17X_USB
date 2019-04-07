@@ -17,14 +17,14 @@ void read_databus(char *string)
     // format + space helper { " \n\r00000+" }
     const char overRange[] = { " \n\r    LO" }; // backwards per optimizers request that for loops count down
 
-    switch (P2IN & BIT7)                        // If over range pin is low, reading has overflown
+    switch (P2IN & BIT1)                        // If over range pin is low, reading has overflown
     {
     case OVER_RANGE_ACTIVE:
         strcpy(string, overRange);
         break;
 
     case OVER_RANGE_INACTIVE:
-        if (P2IN & BIT6)
+        if (P2IN & BIT0)
         {
             string[8] = '-';
         } else {
