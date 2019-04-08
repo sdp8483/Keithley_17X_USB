@@ -33,10 +33,10 @@ void read_databus(char *string)
 
         for (unsigned int i = 7; i > 2; i--)
         {
-            P1OUT |= BIT4;                      // P1.4 on
+            P1OUT ^= BIT4;                      // toggle P1.4 on
             string[i] = (~P1IN & 0xF) + 48;
             delay_512us();                      // delay so P1.4 is visible
-            P1OUT &= ~BIT4;                     // toggle P1.4 off
+            P1OUT ^= BIT4;                      // toggle P1.4 off
             __bis_SR_register(LPM3_bits | GIE); // Enter LPM3, interrupts enabled
         }
         break;
