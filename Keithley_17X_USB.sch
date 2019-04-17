@@ -1714,4 +1714,22 @@ Wire Wire Line
 	9550 5500 9850 5500
 Text Label 9600 5500 0    50   ~ 0
 VCCIO
+Wire Notes Line
+	8250 3450 8450 3750
+Wire Notes Line
+	8450 3450 8250 3750
+Wire Notes Line
+	8250 3850 8450 4250
+Wire Notes Line
+	8250 4250 8450 3850
+Wire Notes Line
+	8250 4350 8450 4650
+Wire Notes Line
+	8250 4650 8450 4350
+Text Notes 8550 3650 1    50   ~ 0
+DNP
+Text Notes 8550 4150 1    50   ~ 0
+DNP
+Text Notes 8550 4550 1    50   ~ 0
+DNP
 $EndSCHEMATC
