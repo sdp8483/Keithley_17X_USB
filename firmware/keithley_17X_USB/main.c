@@ -14,7 +14,7 @@
 #include "delay.h"
 #include "keithley.h"
 
-char reading[] = { " \n\r00000+" };             // this is the reading from the keithley meter
+char reading[] = { " \n\r00000+" };             // this is the reading from the Keithley meter
                                                 // this string is backwards to optimize for loops per TI advise
 int main(void)
 {
@@ -29,12 +29,10 @@ int main(void)
 
     TB0CCTL0 |= CCIE;                           // TBCCR0 interrupt enabled
     TB0CCR0 = 32000;                            // should interrupt at ~2ms [500Hz]
-    TB0CTL = TBSSEL__SMCLK | MC__STOP;          // SMCLK=16MHz, dont start yet
+    TB0CTL = TBSSEL__SMCLK | MC__STOP;          // SMCLK=16MHz, don't start yet
 
     while (1)
     {
-        //P2IFG &= ~BIT0;                         // clear pending interrupts
-        //P2IE |= BIT0;                           // enable interrupt on P2.0, Keithley CLK
         P2IFG &= ~BIT6;                         // clear pending interrupts
         P2IE |= BIT6;                           // enable interrupt on P2.6, Keithley D5
 
@@ -59,7 +57,6 @@ int main(void)
 #pragma vector=PORT2_VECTOR
 __interrupt void PORT2_ISR(void)
 {
-    //P2IE &= ~BIT0;                              // disable any further interrupts
     P2IE &= ~BIT6;                              // disable any further interrupts
     __bic_SR_register_on_exit(LPM3_bits);       // Exit LPM3
 }
