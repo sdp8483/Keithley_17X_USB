@@ -11,7 +11,7 @@ from tkinter import ttk
 serial_data = ''
 filter_data = ''
 ports = []
-update_period = 0.25
+update_period = 0
 serial_object = None
 gui = Tk()
 gui.title("UART Interface")
@@ -65,7 +65,7 @@ def get_data():
     while(1):   
         try:
             serial_data = serial_object.readline()
-            filter_data = serial_data.decode('ascii').strip()
+            filter_data = serial_data.decode('ascii').strip().lstrip('\x00')
         
         except TypeError:
             pass        
@@ -84,6 +84,7 @@ def update_gui():
     
     while(1):
         if filter_data:
+            #text.replace("1.0", END, filter_data)
             if time.time() - new >= update_period:
                 text.replace("1.0", END, filter_data)
                 new = time.time()
@@ -155,7 +156,7 @@ if __name__ == "__main__":
     #button
     #button1 = Button(text = "Send", command = send, width = 6).place(x = 15, y = 250)
     connect = Button(text = "Connect", command = connect).place(x = 15, y = 100)
-    disconnect = Button(text = "Disconnect", command = disconnect).place(x =350, y = 100)
+    disconnect = Button(text = "Disconnect", command = disconnect).place(x =360, y = 100)
    
     #mainloop
     gui.geometry('500x240')
