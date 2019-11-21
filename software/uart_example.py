@@ -114,12 +114,7 @@ if __name__ == "__main__":
     #frame_1 = Frame(height = 285, width = 480, bd = 3, relief = 'groove').place(x = 7, y = 5)
     frame_2 = Frame(height = 150, width = 480, bd = 3, relief = 'groove').place(x = 7, y = 40)
     text = Text(width = 57, height = 1)
-
-    #threads
-    t2 = threading.Thread(target = update_gui)
-    t2.daemon = True
-    t2.start()
-    
+   
     #Labels
     baud   = Label(text = "Baud").place(x = 100, y = 88)
     port   = Label(text = "Port").place(x = 200, y = 88)
@@ -156,7 +151,12 @@ if __name__ == "__main__":
     #button
     #button1 = Button(text = "Send", command = send, width = 6).place(x = 15, y = 250)
     connect = Button(text = "Connect", command = connect).place(x = 15, y = 100)
-    disconnect = Button(text = "Disconnect", command = disconnect).place(x =360, y = 100)
+    disconnect = Button(text = "Disconnect", command = disconnect).place(x =380, y = 100)
+
+    #threads
+    t2 = threading.Thread(target = update_gui)
+    t2.daemon = True
+    t2.start()
    
     #mainloop
     gui.geometry('500x240')
