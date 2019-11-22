@@ -1,5 +1,5 @@
 *.pyc
 *.json
 
-*\build\**
-*\dist\**
+build\**
+dist\**
