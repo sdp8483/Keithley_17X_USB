@@ -18,7 +18,7 @@ import sys
 # Import tkinter items but only what is used
 from tkinter import ttk, Tk
 import tkinter.font as font
-from tkinter import END, Frame, Text, Label, Entry, Button
+from tkinter import END, Frame, Text, Label, Entry, Button, Radiobutton, IntVar
 
 # Globals to share
 serial_data = ''
@@ -42,7 +42,7 @@ def connect():
 
     global serial_object
     port = port_combo.get()
-    baud = baud_entry.get()
+    baud = 115200
 
     try:
         serial_object = serial.Serial(port, baud)
@@ -105,6 +105,9 @@ def disconnect():
 
     gui.quit()
 
+def show_unit():
+    print(u.get())
+
 if __name__ == "__main__":
 
     """
@@ -122,13 +125,9 @@ if __name__ == "__main__":
     text.replace("1.0", END, "   0000")
    
     #Labels
-    baud   = Label(gui, text = "Baud").place(x = 100, y = 88)
     port   = Label(gui, text = "Port").place(x = 200, y = 88)
 
-    #Entry    
-    baud_entry = Entry(gui, width = 7)
-    baud_entry.place(x = 100, y = 105)
-    baud_entry.insert(0, '115200') # set default
+    #Entry
 
     # combobox of serial ports
     ports = [a.device for a in list_ports.comports()]
@@ -136,9 +135,15 @@ if __name__ == "__main__":
     port_combo.place(x=200,y=105)
 
     #button
-    #button1 = Button(text = "Send", command = send, width = 6).place(x = 15, y = 250)
     connect = Button(gui, text = "Connect", command = connect).place(x = 15, y = 100)
     disconnect = Button(gui, text = "Disconnect", command = disconnect).place(x =380, y = 100)
+
+    # Radiobuttons
+    u = IntVar()
+    u.set(1)
+    ohm_button = Radiobutton(gui, text='Ω', indicatoron=0, width=2, padx=2, variable=u, command=show_unit, value=0).place(x=15, y=150)
+    volt_button = Radiobutton(gui, text='V', indicatoron=0, width=2, padx=2, variable=u, command=show_unit, value=1).place(x=35, y=150)
+    amp_button = Radiobutton(gui, text='A', indicatoron=0, width=2, padx=2, variable=u, command=show_unit, value=2).place(x=55, y=150)
 
     #threads
     t2 = threading.Thread(target = update_gui)
