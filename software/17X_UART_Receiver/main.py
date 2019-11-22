@@ -18,15 +18,26 @@ import sys
 # Import tkinter items but only what is used
 from tkinter import ttk, Tk
 import tkinter.font as font
-from tkinter import END, Frame, Text, Label, Entry, Button, Radiobutton, IntVar
+from tkinter import END, Frame, Text, Label, Entry, Button, Radiobutton, IntVar, StringVar
 
 # Globals to share
 serial_data = ''
 filter_data = ''
-update_period = 0
+units = ['Ω', 'V', 'A']
+ranges = [1, 0.1, 0.01, 0.001, 0.0001]
+
+update_period = 0.1
 serial_object = None
 gui = Tk()
 gui.title("Keithley 17X USB Adapter")
+
+# Units GUI Variable
+u = IntVar()
+u.set(1)
+
+# Measurement Range GUI Variable
+r = IntVar()
+r.set(4)
 
 def connect():
     """The function initiates the Connection to the UART device with the Port and Buad fed through the Entry
@@ -62,14 +73,27 @@ def get_data():
     """
     global serial_object
     global filter_data
+    global u
+    global units
+    global r
+    global update_period
 
-    while(1):   
-        try:
-            serial_data = serial_object.readline()
-            filter_data = ' ' + serial_data.decode('ascii').strip().lstrip('\x00')
-        
-        except TypeError:
-            pass        
+    last_update = time.time()
+
+    while(1):
+        if (time.time() - last_update >= update_period):
+            #serial_data = serial_object.readline()
+            bytes_to_read = serial_object.inWaiting()
+            serial_data = serial_object.read(bytes_to_read).decode('ascii')
+            serial_sdata = serial_data.split('\r\n')[-2]
+
+            #serial_sdata = serial_data.decode('ascii').strip().lstrip('\x00')
+            val = serial_sdata[0:len(serial_sdata)-r.get()] + '.' + serial_sdata[len(serial_sdata)-r.get():]
+
+            filter_data = " {data} {units}".format(data=val,
+                                                    units=units[u.get()])
+            
+            last_update = time.time()
 
 def update_gui():
     """" This function is an update function which is also threaded. The function assimilates the data
@@ -78,17 +102,13 @@ def update_gui():
     various performance issues.
     """
     global filter_data
-    global update_period
 
-    text.place(x = 15, y = 10)
-    new = time.time()
+    filter_data_last = ''
     
     while(1):
-        if filter_data:
-            #text.replace("1.0", END, filter_data)
-            if time.time() - new >= update_period:
-                text.replace("1.0", END, filter_data)
-                new = time.time()
+        if (filter_data != filter_data_last):
+            filter_data_last = filter_data
+            text.replace("1.0", END, filter_data)
 
 def disconnect():
     """ 
@@ -105,27 +125,22 @@ def disconnect():
 
     gui.quit()
 
-def show_unit():
-    print(u.get())
-
 if __name__ == "__main__":
-
     """
     The main loop consists of all the GUI objects and its placement.
     The Main loop handles all the widget placements.
     """
     #frames
-    frame_1 = Frame(gui, height = 150, width = 480, bd = 3, relief = 'groove').place(x = 7, y = 40)
+    frame_1 = Frame(gui, height = 220, width = 490, bd = 3, relief = 'groove').place(x = 5, y = 10)
 
     # text
     myFont = font.Font(family='courier', size=30, weight='bold')
-    text = Text(gui, width = 8, height = 1)
-    text.config(fg='Red', bg='Black')
-    text.config(font=myFont)
-    text.replace("1.0", END, "   0000")
-   
+    text = Text(gui, width = 18, height = 1)
+    text.config(fg='Red', bg='Black', font=myFont)
+    text.place(x = 15, y = 25)
+
     #Labels
-    port   = Label(gui, text = "Port").place(x = 200, y = 88)
+    port = Label(gui, text = "Port").place(x = 200, y = 88)
 
     #Entry
 
@@ -138,12 +153,27 @@ if __name__ == "__main__":
     connect = Button(gui, text = "Connect", command = connect).place(x = 15, y = 100)
     disconnect = Button(gui, text = "Disconnect", command = disconnect).place(x =380, y = 100)
 
-    # Radiobuttons
-    u = IntVar()
-    u.set(1)
-    ohm_button = Radiobutton(gui, text='Ω', indicatoron=0, width=2, padx=2, variable=u, command=show_unit, value=0).place(x=15, y=150)
-    volt_button = Radiobutton(gui, text='V', indicatoron=0, width=2, padx=2, variable=u, command=show_unit, value=1).place(x=35, y=150)
-    amp_button = Radiobutton(gui, text='A', indicatoron=0, width=2, padx=2, variable=u, command=show_unit, value=2).place(x=55, y=150)
+    # Units Radiobuttons
+    for i,unit in enumerate(units):
+        Radiobutton(gui,
+                    text=unit, 
+                    indicatoron=0, 
+                    width=2,
+                    height=2, 
+                    padx=2, 
+                    variable=u,
+                    value=i).place(x=15+22*i, y=143)
+    
+    # Range Radiobuttons
+    for i,rng in enumerate(ranges):
+        Radiobutton(gui,
+                    text=rng, 
+                    indicatoron=0, 
+                    width=4,
+                    height=2, 
+                    padx=2, 
+                    variable=r,
+                    value=i).place(x=100+40*i, y=143)
 
     #threads
     t2 = threading.Thread(target = update_gui)
