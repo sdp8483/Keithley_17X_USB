@@ -21,10 +21,17 @@ import tkinter.font as font
 from tkinter import END, Frame, Text, Label, Entry, Button, Radiobutton, IntVar, StringVar
 
 # Globals to share
-serial_data = ''
 filter_data = ''
 units = ['Ω', 'V', 'A']
+ohms_ranges = ["2k", "20k", "200k", "2000k", "20M"]
+ohms_factor = [4, 3, 2, 1, 4]
+volts_ranges = ["200m", "2", "20", "200", "1000"]
+volts_factor = [2, 4, 3, 2, 1]
+amps_ranges = ["200u", "2m", "20m", "200m", "2000m"]
+amps_factor = [2, 4, 3, 2, 1]
+
 ranges = [1, 0.1, 0.01, 0.001, 0.0001]
+range_buttons = []
 
 update_period = 0.1
 serial_object = None
@@ -82,17 +89,16 @@ def get_data():
 
     while(1):
         if (time.time() - last_update >= update_period):
-            #serial_data = serial_object.readline()
             bytes_to_read = serial_object.inWaiting()
             serial_data = serial_object.read(bytes_to_read).decode('ascii')
-            serial_sdata = serial_data.split('\r\n')[-2]
-
-            #serial_sdata = serial_data.decode('ascii').strip().lstrip('\x00')
-            val = serial_sdata[0:len(serial_sdata)-r.get()] + '.' + serial_sdata[len(serial_sdata)-r.get():]
-
-            filter_data = " {data} {units}".format(data=val,
+            try:
+                serial_sdata = serial_data.split('\r\n')[-2].lstrip('\x00')
+                val = serial_sdata[0:len(serial_sdata)-r.get()] + '.' + serial_sdata[len(serial_sdata)-r.get():]
+                filter_data = " {data} {units}".format(data=val,
                                                     units=units[u.get()])
-            
+            except IndexError:
+                filter_data = "Error"
+
             last_update = time.time()
 
 def update_gui():
@@ -109,6 +115,21 @@ def update_gui():
         if (filter_data != filter_data_last):
             filter_data_last = filter_data
             text.replace("1.0", END, filter_data)
+
+def update_range():
+    global ohms_ranges
+    global volts_ranges
+    global amps_ranges
+
+    if (units[u.get()] == 'Ω'):
+        for rb, label in zip(range_buttons, ohms_ranges):
+            rb.config(text = label)
+    elif (units[u.get()] == 'V'):
+        for rb, label in zip(range_buttons, volts_ranges):
+            rb.config(text = label)
+    elif (units[u.get()] == 'A'):
+        for rb, label in zip(range_buttons, amps_ranges):
+            rb.config(text = label)
 
 def disconnect():
     """ 
@@ -153,6 +174,19 @@ if __name__ == "__main__":
     connect = Button(gui, text = "Connect", command = connect).place(x = 15, y = 100)
     disconnect = Button(gui, text = "Disconnect", command = disconnect).place(x =380, y = 100)
 
+    # Range Radiobuttons
+    for i in range(5):
+        range_buttons.append(Radiobutton(gui,
+                    indicatoron=0,
+                    width=5,
+                    height=2, 
+                    padx=2, 
+                    variable=r,
+                    value=i))
+
+    for i,rb in enumerate(range_buttons):
+        rb.place(x=100+45*i, y=143)
+
     # Units Radiobuttons
     for i,unit in enumerate(units):
         Radiobutton(gui,
@@ -162,18 +196,10 @@ if __name__ == "__main__":
                     height=2, 
                     padx=2, 
                     variable=u,
+                    command=update_range,
                     value=i).place(x=15+22*i, y=143)
-    
-    # Range Radiobuttons
-    for i,rng in enumerate(ranges):
-        Radiobutton(gui,
-                    text=rng, 
-                    indicatoron=0, 
-                    width=4,
-                    height=2, 
-                    padx=2, 
-                    variable=r,
-                    value=i).place(x=100+40*i, y=143)
+
+    update_range()
 
     #threads
     t2 = threading.Thread(target = update_gui)
