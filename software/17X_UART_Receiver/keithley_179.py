@@ -40,34 +40,34 @@ class keithley_179_gui:
 
         # GUI Elements
         # frames
-        self.frame_1 = Frame(gui, height = 220, width = 490, bd = 3, relief = 'groove')
+        self.frame_1 = Frame(self.gui, height = 220, width = 490, bd = 3, relief = 'groove')
         self.frame_1.place(x = 5, y = 10)
 
         # text display
         self.display_font = font.Font(family='courier', size=30, weight='bold')
-        self.display = Text(gui, width = 18, height = 1)
+        self.display = Text(self.gui, width = 18, height = 1)
         self.display.config(fg='Red', bg='Black', font=self.display_font)
         self.display.place(x = 15, y = 25)
 
         # Labels
-        self.port_label = Label(gui, text = "Port")
+        self.port_label = Label(self.gui, text = "Port")
         self.port_label.place(x = 200, y = 88)
 
         # Entry
 
         # combobox of serial ports
         self.ports = [a.device for a in list_ports.comports()]
-        self.port_combo = ttk.Combobox(gui,values=self.ports)
+        self.port_combo = ttk.Combobox(self.gui,values=self.ports)
         self.port_combo.place(x=200,y=105)
 
         # Buttons
-        self.connect = Button(gui, 
+        self.connect = Button(self.gui, 
                               text = "Connect", 
                               command = self.connect)
 
-        self.disconnect = Button(gui, 
-                            text = "Disconnect", 
-                            command = self.disconnect)
+        self.disconnect = Button(self.gui, 
+                                 text = "Disconnect", 
+                                 command = self.disconnect)
 
         self.connect.place(x=15, y=100)
         self.disconnect.place(x=380, y=100)
@@ -75,7 +75,7 @@ class keithley_179_gui:
         # Units Radiobuttons
         self.unit_buttons = []
         for i,unit in enumerate(self.unit_switches):
-            r = Radiobutton(gui,
+            r = Radiobutton(self.gui,
                             text=unit, 
                             indicatoron=0, 
                             width=2,
@@ -90,7 +90,7 @@ class keithley_179_gui:
         # Range Radiobuttons
         self.range_buttons = []
         for i,rng in enumerate(self.range_switches[self.get_unit_label()]):
-            r = Radiobutton(gui,
+            r = Radiobutton(self.gui,
                             text=rng,
                             indicatoron=0, 
                             width=5,
@@ -152,7 +152,7 @@ class keithley_179_gui:
         except AttributeError:
             print("No serial port open to disconnect from")
         
-        self.gui.quit()
+        self.gui.destroy()
     
     def get_unit_label(self):
         return self.unit_switches[self.display_unit.get()]
