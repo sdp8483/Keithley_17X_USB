@@ -8,7 +8,6 @@ import time
 import threading
 import serial
 import serial.tools.list_ports as list_ports
-from functools import partial
 
 # Import tkinter items but only what is used
 from tkinter import ttk, Tk
@@ -27,6 +26,7 @@ class keithley_179_gui:
         self.range_switches = {"Ω": ["2k", "20k", "200k", "2000k", "20M"],
                                "V": ["200m", "2 ", "20 ", "200 ", "1000 "],
                                "A": ["200u", "2m", "20m", "200m", "2000m"]}
+                               
         self.range_factors = {"Ω": [2, 3, 4, 5, 3],
                               "V": [4, 2, 3, 4, 5],
                               "A": [4, 2, 3, 4, 5]}
@@ -40,25 +40,25 @@ class keithley_179_gui:
 
         # GUI Elements
         # frames
-        self.frame_1 = Frame(self.gui, height = 220, width = 490, bd = 3, relief = 'groove')
-        self.frame_1.place(x = 5, y = 10)
+        self.frame_1 = Frame(self.gui, height = 225, width = 490, bd = 3, relief = 'groove')
+        self.frame_1.place(x = 5, y = 5)
 
         # text display
         self.display_font = font.Font(family='courier', size=30, weight='bold')
-        self.display = Text(self.gui, width = 18, height = 1)
+        self.display = Text(self.gui, width = 19, height = 1)
         self.display.config(fg='Red', bg='Black', font=self.display_font)
-        self.display.place(x = 15, y = 25)
+        self.display.place(x = 15, y = 15)
 
         # Labels
         self.port_label = Label(self.gui, text = "Port")
-        self.port_label.place(x = 200, y = 88)
+        self.port_label.place(x = 15, y = 145)
 
         # Entry
 
         # combobox of serial ports
         self.ports = [a.device for a in list_ports.comports()]
         self.port_combo = ttk.Combobox(self.gui,values=self.ports)
-        self.port_combo.place(x=200,y=105)
+        self.port_combo.place(x=15,y=165)
 
         # Buttons
         self.connect = Button(self.gui, 
@@ -69,8 +69,8 @@ class keithley_179_gui:
                                  text = "Disconnect", 
                                  command = self.disconnect)
 
-        self.connect.place(x=15, y=100)
-        self.disconnect.place(x=380, y=100)
+        self.connect.place(x=15, y=190)
+        self.disconnect.place(x=100, y=190)
 
         # Units Radiobuttons
         self.unit_buttons = []
@@ -79,12 +79,12 @@ class keithley_179_gui:
                             text=unit, 
                             indicatoron=0, 
                             width=2,
-                            height=2, 
-                            padx=2, 
+                            height=3, 
+                            padx=3, 
                             variable=self.display_unit,
                             command=self.update_range,
                             value=i)
-            r.place(x=15+22*i, y=143)
+            r.place(x=15+25*i, y=80)
             self.unit_buttons.append(r)
         
         # Range Radiobuttons
@@ -94,12 +94,12 @@ class keithley_179_gui:
                             text=rng,
                             indicatoron=0, 
                             width=5,
-                            height=2, 
-                            padx=2, 
+                            height=3, 
+                            padx=3, 
                             variable=self.display_range,
                             command=self.update_range_factor,
                             value=i)
-            r.place(x=100+45*i, y=143)
+            r.place(x=150+50*i, y=80)
             self.range_buttons.append(r)
         
         self.update_range()
