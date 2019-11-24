@@ -15,7 +15,7 @@ def exit_gui():
 if __name__ == "__main__":
     root = Tk()
     root.title("Keithley 17X USB Adapter")
-    root.minsize(250,120)
+    root.minsize(190,120)
 
     #button
     Keithley_179 = Button(root, text = "Keithley 179", width=20, height=2, command = start_k179)
