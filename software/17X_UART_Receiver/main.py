@@ -1,3 +1,7 @@
+''' Create a main GUI with buttons to lauch individual GUIs for each Keithley Model Number
+    November 2019
+'''
+
 # Import tkinter items but only what is used
 from tkinter import Tk
 from tkinter import Label, Button, Toplevel
@@ -5,16 +9,22 @@ from tkinter import Label, Button, Toplevel
 from keithley import keithley_gui
 
 def start_k179():
+    ''' Start the GUI for Keithley 179 Digital Multimeter
+    '''
     k179_window = Toplevel(root)
     k179_gui = keithley_gui(k179_window, model_number=179)
     return
 
 def start_k177():
+    ''' Start the GUI for Keithely 177 Digital Multimeter
+    '''
     k177_window = Toplevel(root)
     k177_gui = keithley_gui(k177_window, model_number=177)
     return
 
 def exit_gui():
+    ''' Exit all
+    '''
     root.destroy()
 
 if __name__ == "__main__":

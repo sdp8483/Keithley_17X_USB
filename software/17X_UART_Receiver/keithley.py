@@ -1,4 +1,4 @@
-''' GUI for Keithley 179 TRMS Digital Multimeter
+''' GUI for Keithley Digital Multimeter
     
     For use with Keithley 17X USB Adapter
 
@@ -21,6 +21,8 @@ from keithley_switches import Keithley_Switches
 
 class keithley_gui:
     def __init__(self, gui, model_number):
+        ''' Initialize all variables and also layout GUI
+        '''
         self.gui = gui
         self.gui.title("Keithley {} USB".format(model_number))
         self.gui.geometry('500x240')
@@ -117,7 +119,7 @@ class keithley_gui:
             self.range_buttons.append(r)
 
     def connect(self):
-            """
+            """ Connect to the serial port then start displaying data
             """
             port = self.port_combo.get()
             baud = 115200
@@ -134,7 +136,7 @@ class keithley_gui:
             self.t1.start()
     
     def get_data(self):
-        """
+        """ display data from the serial port
         """
         self.last_update = time.time()
 
@@ -161,6 +163,8 @@ class keithley_gui:
                 self.last_update = time.time()
     
     def disconnect(self):
+        ''' disconnect from the serial port and close GUI
+        '''
         # Save current user settings
         self.config[self.config_section] = {'unit': self.display_unit.get(),
                                             'range': self.display_range.get()}
@@ -176,9 +180,13 @@ class keithley_gui:
         self.gui.destroy()
     
     def update_range(self):
+        ''' update the range labels
+        '''
         self.update_range_factor()
         for rng_button, label in zip(self.range_buttons, self.front_switches.get_range_lst()):
             rng_button.config(text=label)
 
     def update_range_factor(self):
+        ''' update range factor used to display formated data
+        '''
         self.front_switches.update(self.display_unit.get(), self.display_range.get())
