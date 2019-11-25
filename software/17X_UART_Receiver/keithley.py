@@ -9,6 +9,9 @@ import threading
 import serial
 import serial.tools.list_ports as list_ports
 
+import configparser
+import os
+
 # Import tkinter items but only what is used
 from tkinter import ttk, Tk
 import tkinter.font as font
@@ -25,11 +28,22 @@ class keithley_gui:
         # serial port object
         self.serial_object = None
 
+        # Config file
+        self.config_dir = os.path.dirname(os.path.abspath(__file__))
+        self.config_path = os.path.join(self.config_dir, 'settings.ini')
+        self.config = configparser.ConfigParser()
+        self.config.read(self.config_path)
+
         # Unit and range switches
         self.display_unit = IntVar()
-        self.display_unit.set(0)
         self.display_range = IntVar()
-        self.display_range.set(0)
+        try:
+            self.display_unit.set(self.config['LAST_RUN']['unit'])
+            self.display_range.set(self.config['LAST_RUN']['range'])
+        except KeyError:
+            print("INI file is missing, Is this your first run?")
+            self.display_unit.set(0)
+            self.display_range.set(0)
 
         self.front_switches = Keithley_Switches(model_number)
         self.front_switches.update(self.display_unit.get(), self.display_range.get())
@@ -146,6 +160,13 @@ class keithley_gui:
                 self.last_update = time.time()
     
     def disconnect(self):
+        # Save current user settings
+        self.config['LAST_RUN'] = {'unit': self.display_unit.get(),
+                                   'range': self.display_range.get()}
+
+        with open(self.config_path, 'w') as configfile:
+            self.config.write(configfile)
+
         try:
             self.serial_object.close()
         except AttributeError:
