@@ -24,6 +24,7 @@ class keithley_gui:
         self.gui = gui
         self.gui.title("Keithley {} USB".format(model_number))
         self.gui.geometry('500x240')
+        self.config_section = "K{}".format(model_number)
 
         # serial port object
         self.serial_object = None
@@ -38,8 +39,8 @@ class keithley_gui:
         self.display_unit = IntVar()
         self.display_range = IntVar()
         try:
-            self.display_unit.set(self.config['LAST_RUN']['unit'])
-            self.display_range.set(self.config['LAST_RUN']['range'])
+            self.display_unit.set(self.config[self.config_section]['unit'])
+            self.display_range.set(self.config[self.config_section]['range'])
         except KeyError:
             print("INI file is missing, Is this your first run?")
             self.display_unit.set(0)
@@ -161,8 +162,8 @@ class keithley_gui:
     
     def disconnect(self):
         # Save current user settings
-        self.config['LAST_RUN'] = {'unit': self.display_unit.get(),
-                                   'range': self.display_range.get()}
+        self.config[self.config_section] = {'unit': self.display_unit.get(),
+                                            'range': self.display_range.get()}
 
         with open(self.config_path, 'w') as configfile:
             self.config.write(configfile)
