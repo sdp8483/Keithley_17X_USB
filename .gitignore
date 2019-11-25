@@ -40,3 +40,4 @@ _autosave-*
 # OSX Files
 *.DS_Store
 
+software/17X_UART_Receiver/settings.ini
