@@ -149,12 +149,10 @@ class keithley_gui:
                     self.serial_sdata = self.serial_data.split('\r\n')[-2].lstrip('\x00')
                     formated_value = self.serial_sdata[0:self.front_switches.factor] + '.' + self.serial_sdata[self.front_switches.factor:]
 
-                    #val = serial_sdata[0:len(serial_sdata)-r.get()] + '.' + serial_sdata[len(serial_sdata)-r.get():]
                     display_value = " {data} {prefix}{units}".format(data=formated_value,
                                                                      prefix=self.front_switches.prefix,
                                                                      units=self.front_switches.unit_str)
-                                                                     #prefix=self.unit_prefix,
-                                                                     #units=self.unit_switches[self.display_unit.get()])
+                                                                     
                     self.display.replace("1.0", END, display_value)
 
                 except IndexError:
