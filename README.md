@@ -25,7 +25,7 @@ The Keithley 177 and 179 Digital Multimeter have a GPIB option. If your meter ha
 4. Use the [Interactive BOM](pcb/bom/ibom.html) for part placement during PCB assembly.
 
 ## Programing the MSP430FR2110
-1. The lowest cost solution to obtain a programmer for the MSP430 is to buy a TI Launchpad. The [MSP-EXP430FR2433](http://www.ti.com/tool/MSP-EXP430FR2433) Launchpad is a good potion but any TI Lauchpad that has an onboard onboard eZ-FET debug probe will work.
+1. The lowest cost solution to obtain a programmer for the MSP430 is to buy a TI Launchpad. The [MSP-EXP430FR2433](http://www.ti.com/tool/MSP-EXP430FR2433) Launchpad is a good option but any TI Lauchpad that has an onboard eZ-FET debug probe will work.
 
 ![MSP-EXP430FR2433](photos/ti_Launchpad_example.jpg)
 
@@ -34,7 +34,7 @@ The Keithley 177 and 179 Digital Multimeter have a GPIB option. If your meter ha
 
     2. Use TI UniFlash. You can either install [UniFlash](http://www.ti.com/tool/UNIFLASH) or use the [UniFlash cloud tool](https://dev.ti.com/). The compiled code is in [firmware/releases](firmware/releases).
 
-3. Remove all the jumpers from the TI Launchpad used to connect the eZ-FET to the onboard target microcontrollers. Connect the eZ-FET to connector J3 on the Keithley 17x USB adapter. The pinout is labeled on the silkscreen. It is not necessary to solder a header onto the PCB, I programmed all my boards using female to male Dupoint wires and held them in place while uploading the code.
+3. Remove all the jumpers from the TI Launchpad used to connect the eZ-FET to the onboard target microcontroller. Connect the eZ-FET to connector J3 on the Keithley 17x USB adapter. The pinout is labeled on the silkscreen. It is not necessary to solder a header onto the PCB, I programmed all my boards using female to male Dupoint wires and held them in place while uploading the code.
 
 ![Remove Jumpers from Lauchpad](photos/ti_launchpad_noJumpers.jpg)
 
