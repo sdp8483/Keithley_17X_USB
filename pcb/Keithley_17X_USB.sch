@@ -252,7 +252,12 @@ P 9550 6100
 F 0 "D6" H 9550 6200 50  0000 C CNN
 F 1 "RXLED" H 9550 6000 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 9550 6100 50  0001 C CNN
-F 3 "~" H 9550 6100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912191206_Foshan-NationStar-Optoelectronics-NCD0805R1_C84256.pdf" H 9550 6100 50  0001 C CNN
+F 4 "Red 615~630nm 0805 Light Emitting Diodes (LED) RoHS" H 9550 6100 50  0001 C CNN "Description"
+F 5 "Foshan NationStar Optoelectronics" H 9550 6100 50  0001 C CNN "Manufacture"
+F 6 "NCD0805R1" H 9550 6100 50  0001 C CNN "Mfg Part Number"
+F 7 "LCSC" H 9550 6100 50  0001 C CNN "Supplier"
+F 8 "C84256" H 9550 6100 50  0001 C CNN "Supplier Part Number"
 	1    9550 6100
 	0    -1   -1   0   
 $EndComp
@@ -263,7 +268,12 @@ P 9850 6100
 F 0 "D7" H 9850 6200 50  0000 C CNN
 F 1 "TXLED" H 9850 6000 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 9850 6100 50  0001 C CNN
-F 3 "~" H 9850 6100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912191206_Foshan-NationStar-Optoelectronics-NCD0805R1_C84256.pdf" H 9850 6100 50  0001 C CNN
+F 4 "Red 615~630nm 0805 Light Emitting Diodes (LED) RoHS" H 9850 6100 50  0001 C CNN "Description"
+F 5 "Foshan NationStar Optoelectronics" H 9850 6100 50  0001 C CNN "Manufacture"
+F 6 "NCD0805R1" H 9850 6100 50  0001 C CNN "Mfg Part Number"
+F 7 "LCSC" H 9850 6100 50  0001 C CNN "Supplier"
+F 8 "C84256" H 9850 6100 50  0001 C CNN "Supplier Part Number"
 	1    9850 6100
 	0    -1   -1   0   
 $EndComp
@@ -1196,7 +1206,12 @@ P 10250 6100
 F 0 "D8" H 10250 6200 50  0000 C CNN
 F 1 "READ" H 10250 6000 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 10250 6100 50  0001 C CNN
-F 3 "~" H 10250 6100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912191206_Foshan-NationStar-Optoelectronics-NCD0805R1_C84256.pdf" H 10250 6100 50  0001 C CNN
+F 4 "Red 615~630nm 0805 Light Emitting Diodes (LED) RoHS" H 10250 6100 50  0001 C CNN "Description"
+F 5 "Foshan NationStar Optoelectronics" H 10250 6100 50  0001 C CNN "Manufacture"
+F 6 "NCD0805R1" H 10250 6100 50  0001 C CNN "Mfg Part Number"
+F 7 "LCSC" H 10250 6100 50  0001 C CNN "Supplier"
+F 8 "C84256" H 10250 6100 50  0001 C CNN "Supplier Part Number"
 	1    10250 6100
 	0    -1   -1   0   
 $EndComp
@@ -1251,7 +1266,12 @@ P 8800 6100
 F 0 "D4" H 8800 6200 50  0000 C CNN
 F 1 "5V" H 8800 6000 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 8800 6100 50  0001 C CNN
-F 3 "~" H 8800 6100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912191206_Foshan-NationStar-Optoelectronics-NCD0805R1_C84256.pdf" H 8800 6100 50  0001 C CNN
+F 4 "Red 615~630nm 0805 Light Emitting Diodes (LED) RoHS" H 8800 6100 50  0001 C CNN "Description"
+F 5 "Foshan NationStar Optoelectronics" H 8800 6100 50  0001 C CNN "Manufacture"
+F 6 "NCD0805R1" H 8800 6100 50  0001 C CNN "Mfg Part Number"
+F 7 "LCSC" H 8800 6100 50  0001 C CNN "Supplier"
+F 8 "C84256" H 8800 6100 50  0001 C CNN "Supplier Part Number"
 	1    8800 6100
 	0    -1   -1   0   
 $EndComp
@@ -1273,7 +1293,12 @@ P 9100 6100
 F 0 "D5" H 9100 6200 50  0000 C CNN
 F 1 "3V3" H 9100 6000 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 9100 6100 50  0001 C CNN
-F 3 "~" H 9100 6100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912191206_Foshan-NationStar-Optoelectronics-NCD0805R1_C84256.pdf" H 9100 6100 50  0001 C CNN
+F 4 "Red 615~630nm 0805 Light Emitting Diodes (LED) RoHS" H 9100 6100 50  0001 C CNN "Description"
+F 5 "Foshan NationStar Optoelectronics" H 9100 6100 50  0001 C CNN "Manufacture"
+F 6 "NCD0805R1" H 9100 6100 50  0001 C CNN "Mfg Part Number"
+F 7 "LCSC" H 9100 6100 50  0001 C CNN "Supplier"
+F 8 "C84256" H 9100 6100 50  0001 C CNN "Supplier Part Number"
 	1    9100 6100
 	0    -1   -1   0   
 $EndComp

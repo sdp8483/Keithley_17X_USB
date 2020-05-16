@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Keithley_17X_USB-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
@@ -1732,4 +1731,10 @@ Text Notes 8550 4150 1    50   ~ 0
 DNP
 Text Notes 8550 4550 1    50   ~ 0
 DNP
+Text Notes 1950 1650 2    50   ~ 0
+DNP
+Wire Notes Line
+	1600 1650 2100 2000
+Wire Notes Line
+	2100 1650 1600 2000
 $EndSCHEMATC
