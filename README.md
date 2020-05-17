@@ -88,7 +88,12 @@ The DIP socket on my 177 was to close to the mounting pillar and required me to 
 
 # PC Connection
 
-The Keithley 17x USB Adapter uses a FTDI serial to USB converter IC. Most operating systems should come with drivers alread installed. If your system does not come with FTDI drivers you will need to download and install them from [FTDI](https://www.ftdichip.com/FTDrivers.htm).
+The Keithley 17x USB Adapter uses a FTDI serial to USB converter IC. Most operating systems should come with drivers already installed. If your system does not come with FTDI drivers you will need to download and install them from [FTDI](https://www.ftdichip.com/FTDrivers.htm).
 
-Connect to the Keithley 17x USB Adapter using any serial terminal program such as [PuTTY](https://www.putty.org/) (Windows) or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux).  You can also use the Arduino serial monitor.
+Connect to the Keithley 17x USB Adapter using any serial terminal program such as [PuTTY](https://www.putty.org/) (Windows) or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux).  You can also use the Arduino serial monitor. The FTDI is setup for a baud rate of 115200 8N1.
 
+If you have Python 3.x installed on your computer you can also use the [Python GUI](software/17X_UART_Receiver) that I developed. Run the GUI from a terminal using the following command: `python main.py`
+ 
+Select the model of multimeter you are connecting to. A window will popup that will let you select the serial port of the multimeter you wan to connect to. After connecting select the measurement units and the measurement range of the meter. The range switches on the GUI **do not** change the range on the multimeter, they simply format the GUI display to match the multimeter display. There is no way for the USB Adapter to change the range on the multimeter, it is a simple read only device.
+
+![Python GUI](photos/Python_GUI.png)
