@@ -43,8 +43,41 @@ The Keithley 177 and 179 Digital Multimeter have a GPIB option. If your meter ha
 ## Installing the USB Adapter into the Keithley Digital Multimeter
 1. Print and cutout the mounting hole locating [template](enclosure/Drawings/mounting_template.pdf).
 
+![cutout template](photos/cutout_template.jpg)
+
+2. Open up your digital multimeter. We need to add a few holes to the rear of the top case.
+
 2. Using a punch and the hole locating template mark the center of the mounting hole locations and the USB cutout.
 
-3. Drill the mounting holes using a clearance drill for a M3 bolt using a M3.2 drill or an 1/8" drill.
+![center punch](photos/center_punch.jpg)
+![center punched](photos/center_punched.jpg)
 
-4. Drill the USB cutout using a 9/16" drill or closest metric size.
+3. Drill the mounting holes using a #29 [3.45mm] drill or closest metric size. Enjoy that old plastic smell coming from the fresh drilled hole.
+
+4. First drill out the USB hole using a small drill to act as a pilot. You can used the drill bit used for drilling the mounting holes. Then drill the USB cutout to 5/8" [15.875mm] or the closest metric size. I used a set of step drills so that the hole was gradually increased.
+![pilot drill](photos/pilot_drill.jpg)
+![check holes](photos/check_alignment.jpg)
+
+5. Don't forget to deburr the drilled holes.
+
+6. Print off a [face plate](encloser/USB_face_plate.stl) so we can hide the gap around the circular cutout for the USB connector. Print at 0.2mm layer height. Its very thin so it should print fast, about 5 minutes on my Prusa clone. If you don't mind the gap you can skip this.
+
+![install with faceplate](photos/install_face_plate.jpg)
+
+7. Place the top of the case to the right of the bottom or the multimeter.
+![side by side](photos/side_by_side.jpg)
+
+8. Install the DIP connector into the DIP socket on the multimeter main board. It's hard to see it in the photo but the DIP socket has a chamfered corner on the inside pocket to indicate pin 1. Align pin 1 of the DIP socket to pin 1 of the ribbon cable, the red stripe. Dont go by the pictures below, it seems that the placement of Pin 1 on this DIP socket is different not only between the 177 and 179 but also between the same model.
+
+![DIP pin 1](photos/align_DIP_pin1.jpg)
+![DIP inserted](photos/DIP_installed.jpg)
+
+9. Install the IDC connector on the ribbon cable. Pin 1 of the connector is indicated by a small triangle, make sure this aligns with the red stripe of the ribbon cable. Before fully attaching the IDC connector it is good to check the cable length by putting the top of the case onto the multimeter.
+![IDC Pin 1](photos/IDC_pin1.jpg)
+![Check Cable Length](photos/check_fit_before.jpg)
+
+10. Trim the ribbon cable. A hobby knife or similar tool works.
+![Trim Ribbon Cable](photos/trim_ribbon_cable.jpg)
+
+11. Reassemble the multimeter and test it out using a terminal program on your PC.
+![Test Communication](photos/test_adapter.jpg)
