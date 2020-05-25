@@ -1,5 +1,5 @@
 # Keithley 17x USB Adapter
-The following device is used to connect the Keithley 177 and 179 digital multimeter to the PC over USB for data logging or remote monitoring. The USB Adapter shows up to the PC as a serial COM port enabling the user to use simple serial terminal programs to read data from the Keithley multimeter.
+The following device is used to connect the Keithley 177 and 179 digital multimeter to the PC. The USB Adapter is a serial COM port enabling the user to use simple serial terminal programs to read data from the Keithley multimeter.
 
 ![Keithley 17x USB Adapter](photos/Keithley_17x_USB.jpg)
 
@@ -18,7 +18,7 @@ The Keithley 177 and 179 Digital Multimeter have a GPIB option. If your meter ha
 # Building the PCB
 1. Download the [GERBER](pcb/gerber) files and order from your favorite prototype PCB board house. The PCB is double sided and is 70.5mm x 40mm in size.
 
-2. For reflow soldering if your PCB manufacture offers it I strongly suggest getting a solder paste stencil from them. If ordering thorough a board house that does not offer stencils then [OSH Stencils](https://www.oshstencils.com/#%20) is a low cost option. The Polyimide film 3mil stencil is more then durable enough for a few boards and the cost is just about right. For hand soldering the solder paste stencil can be omitted.
+2. For reflow soldering I strongly suggest getting a solder paste stencil from your prototype PCB manufacture. If ordering thorough a board house that does not offer stencils then [OSH Stencils](https://www.oshstencils.com/#%20) is a low cost option. The polyimide film 3mil stencil is more then durable enough for a few boards and the cost is just about right. For hand soldering the solder paste stencil can be omitted.
 
 3. Order the components listed in the [BOM](pcb/bom/Keithley_17x_USB_BOM.csv). All items were ordered from [DigiKey](https://www.digikey.com/) or [LCSC](https://lcsc.com/) but it is possible to source from other suppliers.
 
@@ -30,9 +30,9 @@ The Keithley 177 and 179 Digital Multimeter have a GPIB option. If your meter ha
 ![MSP-EXP430FR2433](photos/ti_Launchpad_example.jpg)
 
 2. There are at least two software paths for uploading the firmware
-    1. Install the latest version of [Code Composer Studio](http://www.ti.com/tool/CCSTUDIO), import the CCS project found in [firmware/keithley_17X_USB](firmware/keithley_17X_USB), and build the firmware yourself. There is also a [cloud version of CCS](https://dev.ti.com/) that you can use if you do not want to install software on your PC.
+    1. **TI UniFlash:** You can either install [UniFlash](http://www.ti.com/tool/UNIFLASH) or use the [UniFlash cloud tool](https://dev.ti.com/). The compiled code is in [firmware/releases](firmware/releases).
 
-    2. Use TI UniFlash. You can either install [UniFlash](http://www.ti.com/tool/UNIFLASH) or use the [UniFlash cloud tool](https://dev.ti.com/). The compiled code is in [firmware/releases](firmware/releases).
+    2. **TI Code Composer Studio:** Install the latest version of [Code Composer Studio](http://www.ti.com/tool/CCSTUDIO), import the CCS project found in [firmware/keithley_17X_USB](firmware/keithley_17X_USB), and build the firmware yourself. There is also a [cloud version of CCS](https://dev.ti.com/) that you can use if you do not want to install software on your PC.
 
 3. Remove all the jumpers from the TI Launchpad used to connect the eZ-FET to the onboard target microcontroller. Connect the eZ-FET to connector J3 on the Keithley 17x USB adapter. The pinout is labeled on the silkscreen. It is not necessary to solder a header onto the PCB, I programmed all my boards using female to male Dupont wires and held them in place while uploading the code.
 
@@ -67,7 +67,7 @@ The Keithley 177 and 179 Digital Multimeter have a GPIB option. If your meter ha
 7. Place the top of the case to the right of the bottom of the multimeter.
 ![side by side](photos/side_by_side.jpg)
 
-8. Install the DIP connector into the DIP socket on the multimeter main board. It's hard to see it in the photo but the DIP socket has a chamfered corner on the inside pocket to indicate pin 1. Align pin 1 of the DIP socket to pin 1 of the ribbon cable, the red stripe. Dont go by the pictures below, it seems that the placement of Pin 1 on this DIP socket is different not only between the 177 and 179 but also between the same model number.
+8. Install the DIP connector into the DIP socket on the multimeter main board. It's hard to see it in the photo but the DIP socket has a chamfered corner on the inside pocket to indicate pin 1. Align pin 1 of the DIP socket to pin 1 of the ribbon cable, the red stripe. Don't go by the pictures below, it seems that the placement of Pin 1 on this DIP socket is different not only between the 177 and 179 but also between the same model number.
 
 ![DIP pin 1](photos/align_DIP_pin1.jpg)
 ![DIP inserted](photos/DIP_installed.jpg)
@@ -92,7 +92,9 @@ The Keithley 17x USB Adapter uses a FTDI serial to USB converter IC. Most operat
 
 Connect to the Keithley 17x USB Adapter using any serial terminal program such as [PuTTY](https://www.putty.org/) (Windows) or [Minicom](https://en.wikipedia.org/wiki/Minicom) (Linux).  You can also use the Arduino serial monitor. The FTDI is setup for a baud rate of 115200 8N1.
 
-If you have Python 3.x installed on your computer you can also use the [Python GUI](software/17X_UART_Receiver) that I developed. Run the GUI from a terminal using the following command: `python main.py`
+# Python GUI
+
+If you have Python 3.x installed on your computer you can also use the [Python GUI](software/17X_UART_Receiver) that I developed. Open a termianl from `software/17X_UART_Reciever`. Run the GUI from a terminal using the following command: `python main.py`
  
 Select the model of multimeter you are connecting to. A window will popup that will let you select the serial port of the multimeter you wan to connect to. After connecting select the measurement units and the measurement range of the meter. The range switches on the GUI **do not** change the range on the multimeter, they simply format the GUI display to match the multimeter display. There is no way for the USB Adapter to change the range on the multimeter, it is a simple read only device.
 
