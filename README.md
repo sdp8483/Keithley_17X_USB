@@ -99,3 +99,9 @@ If you have Python 3.x installed on your computer you can also use the [Python G
 Select the model of multimeter you are connecting to. A window will popup that will let you select the serial port of the multimeter you wan to connect to. After connecting select the measurement units and the measurement range of the meter. The range switches on the GUI **do not** change the range on the multimeter, they simply format the GUI display to match the multimeter display. There is no way for the USB Adapter to change the range on the multimeter, it is a simple read only device.
 
 ![Python GUI](photos/Python_GUI.png)
+
+# Theroy of Operation
+
+Below is a screenshot from the display section of the schematic for the Keihtley 177, the 179 display is simalar. Connector J1008 is on the right of the schematic. This connects to the data bus between the main multimeter IC U106 and the display. The following signals are avalible and used by the USB adapter from connector J1008: 
+
+![Keithley 177 Schmatic](photos/Keithley_177_displaySch.png)
