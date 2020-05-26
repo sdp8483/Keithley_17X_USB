@@ -94,7 +94,7 @@ Connect to the Keithley 17x USB Adapter using any serial terminal program such a
 
 # Python GUI
 
-If you have Python 3.x installed on your computer you can also use the [Python GUI](software/17X_UART_Receiver). Run the GUI from a terminal using the following command: `python software/17X_UART_Reciever/main.py`
+If you have Python 3.x installed on your computer you can also use the [Python GUI](software/17X_UART_Receiver). Run the GUI from a terminal using the following command: `python Keithley_17X_USB/software/17X_UART_Reciever/main.py`
  
 Select the model of multimeter you are connecting to. A window will popup that will let you select the serial port of the multimeter you wan to connect to. After connecting select the measurement units and the measurement range of the meter. The range switches on the GUI **do not** change the range on the multimeter, they simply format the GUI display to match the multimeter display. There is no way for the USB Adapter to change the range on the multimeter, it is a read only device.
 
